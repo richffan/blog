@@ -226,7 +226,7 @@ theme = "fixIt"
   [params.tagcloud]
     enable = true
     min = 14 # 最小字体大小，单位：px
-    max = 64 # 最大字体大小，单位：px
+    max = 48 # 最大字体大小，单位：px
     peakCount = 10 # 每个标签的最大文章数
     orderby = "name" # 标签排序方式，可选值：["name", "count"]
 
@@ -876,8 +876,8 @@ theme = "fixIt"
 
 # Permalinks 配置 (https://gohugo.io/content-management/urls#permalinks)
 [Permalinks]
-  # posts = ":year/:month/:filename"
-  posts = ":filename"
+  posts = ":year/:month/:filename"
+  # posts = ":filename"
 
 # 隐私信息配置 (https://gohugo.io/about/hugo-and-gdpr/)
 [privacy]
