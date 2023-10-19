@@ -8,3 +8,7 @@ lightgallery: true
 math: true
 aliases: /about/
 ---
+
+<i class='fa-solid fa-old-republic fa-fw'></i>
+
+<i class='fa-solid fa-hand-holding-heart fa-fw'></i>
