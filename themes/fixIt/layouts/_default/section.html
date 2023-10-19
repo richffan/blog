@@ -21,8 +21,8 @@
         {{- if ge $humanizedNum 1000 -}}
           {{- $humanizedNum = printf "%.2fK" (div $humanizedNum 1000.0) -}}
         {{- end -}}
-        <p class="single-subtitle total-word-count" title='{{- T "taxonomy.totalwordCount" 1 }}'>
-          {{- dict "Class" "fa-regular fa-keyboard fa-fw" | partial "plugin/icon.html" }} {{ T "taxonomy.totalwordCount" (dict "Count" $humanizedNum) -}}
+        <p class="single-subtitle total-word-count" title='{{- T "section.totalWordCount" . }}'>
+          {{- dict "Class" "fa-regular fa-keyboard fa-fw" | partial "plugin/icon.html" }} {{ T "section.totalWordCount" (dict "Count" $humanizedNum) -}}
         </p>
       {{- end -}}
     </div>
@@ -42,7 +42,7 @@
           <article class="archive-item">
             <a href="{{ .RelPermalink }}" class="archive-item-link">{{- .Title -}}</a>
             <span class="archive-item-date" title='{{ "2006-01-02 15:04:05" | .Date.Format }}'>
-              {{- $.Site.Params.section.dateFormat | default "01-02" | .Date.Format -}}
+              {{- .Date | dateFormat ($.Site.Params.section.dateFormat | default "01-02") -}}
             </span>
           </article>
         {{- end -}}
