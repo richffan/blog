@@ -22,7 +22,7 @@ to the use of chronological accounting to specify, chronological accounting
 method has several drawbacks, masters generally do not use.
 Now let's talk about the logic of xbase.
 https://fanyi.youdao.com/download
-! [] (https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/xbase notes 
+! [] (https://img.richfan.site/obsidian/xbase notes 
 _1. Webp)
 The above picture is the trial balance of Tianjian. xbase, analytical entry, 
 analytical entry (comprehensive analysis), supplementary entry, cash flow 
@@ -111,13 +111,13 @@ directly into the rest of the payments from operating activities. If we want
 it to be shown as an amount incurred, we would put 3 million under "Recovery 
 of other large operating amounts" of xbase's other receivables, as shown 
 in the figure below.
-! [] (https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/xbase notes 
+! [] (https://img.richfan.site/obsidian/xbase notes 
 _2. Webp)
 When this is done, the xbase formula will automatically link the 3 million 
 to the analysis entry, and then calculate the rest of the operating 
 activities to become 4 million, and the result is the same as the template 
 method we discussed earlier. The picture below is as follows.
-! [] (https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/xbase notes 
+! [] (https://img.richfan.site/obsidian/xbase notes 
 _3. Webp)
 ** Change in Doubtful debts **
 The change in bad debts of other receivables is rolled up to "cash paid for 
@@ -210,10 +210,10 @@ in "included in administrative expenses, sales expenses".
 Assume that the accumulated depreciation debit amount is 600,000, the credit 
 amount is 5 million, of which 3 million corresponds to the cost, 2 million 
 corresponds to the expense, xbase filling method is as follows.
-! [] (https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/xbase notes 
+! [] (https://img.richfan.site/obsidian/xbase notes 
 _4. Webp)
 Once filled out, the analysis entry is shown below.
-! [] (https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/xbase notes 
+! [] (https://img.richfan.site/obsidian/xbase notes 
 _5. Webp)
 As we can see, the analytical entry is to put the accumulated depreciation 
 recorded in costs into "cash paid for goods and services" with a negative 
