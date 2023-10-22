@@ -58,9 +58,9 @@ theme = "fixIt"
   #  FixIt 主题版本
   version = "0.2.18" # 例如："0.2.X", "0.2.15", "v0.2.15" 等
   # 网站描述
-  description = "樊刹"
+  description = "樊刹|不渡尘心"
   # 网站关键词
-  keywords = ["Hugo", "FixIt", "richfan", "樊刹", "不渡尘心"]
+  keywords = ["Hugo", "FixIt", "richfan", "樊刹", "不渡尘心", "樊刹|不渡尘心"]
   # 网站默认主题样式 ["light", "dark", "auto"]
   defaultTheme = "auto"
   # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
