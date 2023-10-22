@@ -1,6 +1,6 @@
 ---
 title: "emoji"
-categories: ["编程"]
+categories: [编程]
 tags: ["emoji"]
 date: 2023-08-01
 ---

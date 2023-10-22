@@ -1,6 +1,6 @@
 ---
 title: "Jupyter添加目录toc"
-categories: ["编程"]
+categories: [编程]
 tags: ["python"]
 date: 2023-09-25
 ---

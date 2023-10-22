@@ -1,6 +1,6 @@
 ---
 title: "016-北京兴华会计师事务所放了什么飞机被罚236万"
-categories: ["投行"]
+categories: [投行]
 tags: ["IPO审计手札"]
 date: 2023-08-01
 ---

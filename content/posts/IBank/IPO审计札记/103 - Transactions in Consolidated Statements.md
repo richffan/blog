@@ -1,6 +1,6 @@
 ---
 title: "103 - 合并报表之抵交易"
-categories: ["投行"]
+categories: [投行]
 tags: ["IPO审计手札"]
 date: 2023-08-01
 ---

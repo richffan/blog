@@ -1,6 +1,6 @@
 ---
 title: "038-存货审计概要"
-categories: ["投行"]
+categories: [投行]
 tags: ["IPO审计手札"]
 date: 2023-08-01
 ---

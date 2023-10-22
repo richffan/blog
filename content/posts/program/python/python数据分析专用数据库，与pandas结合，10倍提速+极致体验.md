@@ -1,8 +1,8 @@
 ---
 title: python数据分析专用数据库，与pandas结合，10倍提速+极致体验
 date: 2023-08-12 17:56:00
-categories: ["编程"]
-tags:  ["python"]
+categories: [编程]
+tags:  [python]
 ---
 
 ## 前言

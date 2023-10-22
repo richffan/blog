@@ -1,6 +1,6 @@
 ---
 title: "SQL每日一题F1025，复杂逻辑处理"
-categories: ["编程"]
+categories: [编程]
 tags: ["SQL"]
 date: 2023-08-01
 ---

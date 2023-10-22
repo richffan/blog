@@ -1,6 +1,6 @@
 ---
 title: "030-应收票据和应收款项融资审计要点补充"
-categories: ["投行"]
+categories: [投行]
 tags: ["IPO审计手札"]
 date: 2023-08-01
 ---

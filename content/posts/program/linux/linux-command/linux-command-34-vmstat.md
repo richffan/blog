@@ -1,7 +1,7 @@
 ---
 title: '每天一个linux命令（34）: vmstat'
 date: 2017-01-03 09:46:57
-categories: ["编程"]
+categories: [编程]
 tags: ["linux命令"]
 ---
 　　vmstat是Virtual Meomory Statistics（虚拟内存统计）的缩写，可对操作系统的虚拟内存、进程、CPU活动进行监控。他是对系统的整体情况进行统计，不足之处是无法对某个进程进行深入分析。vmstat 工具提供了一种低开销的系统性能观察方式。因为 vmstat 本身就是低开销工具，在非常高负荷的服务器上，你需要查看并监控系统的健康情况,在控制窗口还是能够使用vmstat 输出结果。在学习vmstat命令前，我们先了解一下Linux系统中关于物理内存和虚拟内存相关信息。

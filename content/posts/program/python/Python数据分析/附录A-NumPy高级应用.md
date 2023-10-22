@@ -1,6 +1,6 @@
 ---
 title: "附录A-NumPy高级应用"
-categories: ["编程"]
+categories: [编程]
 tags: ["python"]
 date: 2023-09-25
 ---

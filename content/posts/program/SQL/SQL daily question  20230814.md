@@ -1,6 +1,6 @@
 ---
 title: "SQL每日一题(20230814)"
-categories: ["编程"]
+categories: [编程]
 tags: ["SQL"]
 date: 2023-08-01
 ---

@@ -1,7 +1,7 @@
 ---
 title: '每天一个linux命令（22）: find命令的参数详解'
 date: 2016-12-22 11:44:14
-categories: ["编程"]
+categories: [编程]
 tags: ["linux命令"]
 ---
 　　find一些常用参数的一些常用实例和一些具体用法和注意事项。

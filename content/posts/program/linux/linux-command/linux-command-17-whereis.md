@@ -1,7 +1,7 @@
 ---
 title: '每天一个linux命令（17）: whereis'
 date: 2016-12-17 10:42:58
-categories: ["编程"]
+categories: [编程]
 tags: ["linux命令"]
 ---
 　　whereis命令只能用于程序名的搜索，而且只搜索二进制文件（参数-b）、man说明文件（参数-m）和源代码文件（参数-s）。如果省略参数，则返回所有信息。

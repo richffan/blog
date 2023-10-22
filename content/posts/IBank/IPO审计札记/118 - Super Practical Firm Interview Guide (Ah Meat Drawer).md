@@ -1,6 +1,6 @@
 ---
 title: "118-超实用的事务所面试指南（啊肉的抽屉）"
-categories: ["投行"]
+categories: [投行]
 tags: ["IPO审计手札"]
 date: 2023-08-01
 ---

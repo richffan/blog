@@ -1,6 +1,6 @@
 ---
 title: "第三章 高级特性"
-categories: ["编程"]
+categories: [编程]
 tags: ["python"]
 date: 2023-09-25
 ---

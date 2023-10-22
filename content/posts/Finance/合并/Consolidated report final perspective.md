@@ -1,6 +1,6 @@
 ---
 title: "合并报表最终视角"
-categories: ["审计"]
+categories: [审计]
 tags: ["合并"]
 date: 2023-08-01
 ---

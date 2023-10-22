@@ -1,6 +1,6 @@
 ---
 title: "095-财务尽职调查核心思路"
-categories: ["投行"]
+categories: [投行]
 tags: ["IPO审计手札"]
 date: 2023-08-01
 ---

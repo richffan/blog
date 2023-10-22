@@ -1,6 +1,6 @@
 ---
 title: "第四章 Numpy 基础"
-categories: ["编程"]
+categories: [编程]
 tags: ["python"]
 date: 2023-09-25
 ---

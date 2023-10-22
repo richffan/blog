@@ -1,6 +1,6 @@
 ---
 title: "018-审计底稿中那些狗屁不通的审计说明（疯狂会计师）"
-categories: ["投行"]
+categories: [投行]
 tags: ["IPO审计手札"]
 date: 2023-08-01
 ---

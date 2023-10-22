@@ -1,6 +1,6 @@
 ---
 title: "第五章 Pandas 入门"
-categories: ["编程"]
+categories: [编程]
 tags: ["python"]
 date: 2023-09-25
 ---

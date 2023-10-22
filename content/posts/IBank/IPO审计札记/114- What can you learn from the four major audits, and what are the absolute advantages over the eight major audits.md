@@ -1,6 +1,6 @@
 ---
 title: "114-四大审计能让你学会什么，相较八大有哪些绝对优势"
-categories: ["投行"]
+categories: [投行]
 tags: ["IPO审计手札"]
 date: 2023-08-01
 ---

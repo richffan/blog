@@ -1,7 +1,7 @@
 ---
 title: '每天一个linux命令（57）: sftp'
 date: 2017-03-05 16:29:38
-categories: ["编程"]
+categories: [编程]
 tags: ["linux命令"]
 ---
 sFTP（安全文件传输程序）是一种安全的交互式文件传输程序，其工作方式与 FTP（文件传输协议）类似。 然而，sFTP 比 FTP 更安全；它通过加密 SSH 传输处理所有操作。

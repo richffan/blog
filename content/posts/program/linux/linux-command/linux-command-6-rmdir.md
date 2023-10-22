@@ -1,7 +1,7 @@
 ---
 title: '每天一个linux命令（6）: rmdir'
 date: 2016-12-06 15:24:32
-categories: ["编程"]
+categories: [编程]
 tags: ["linux命令"]
 ---
 　　今天学习一下linux中命令： rmdir命令。rmdir是常用的命令，该命令的功能是删除空目录，一个目录被删除之前必须是空的。（注意，rm - r dir命令可代替rmdir，但是有很大危险性。）删除某目录时也必须具有对父目录的写权限。

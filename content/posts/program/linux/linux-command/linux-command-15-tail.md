@@ -1,7 +1,7 @@
 ---
 title: '每天一个linux命令（15）: tail'
 date: 2016-12-15 15:00:26
-categories: ["编程"]
+categories: [编程]
 tags: ["linux命令"]
 ---
 　　tail 命令从指定点开始将文件写到标准输出.使用tail命令的-f选项可以方便的查阅正在改变的日志文件,tail -f filename会把filename里最尾部的内容显示在屏幕上,并且不但刷新,使你看到最新的文件内容.

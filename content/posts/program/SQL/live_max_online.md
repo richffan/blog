@@ -1,6 +1,6 @@
 ---
 title: "live_max_online"
-categories: ["编程"]
+categories: [编程]
 tags: ["SQL"]
 date: 2023-08-01
 ---

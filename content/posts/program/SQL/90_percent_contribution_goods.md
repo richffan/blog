@@ -1,6 +1,6 @@
 ---
 title: "求占据前90%销售额的商品类型"
-categories: ["编程"]
+categories: [编程]
 tags: ["SQL"]
 date: 2023-08-01
 ---

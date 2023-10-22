@@ -1,6 +1,6 @@
 ---
 title: "039-存货之发出商品审计要点"
-categories: ["投行"]
+categories: [投行]
 tags: ["IPO审计手札"]
 date: 2023-08-01
 ---

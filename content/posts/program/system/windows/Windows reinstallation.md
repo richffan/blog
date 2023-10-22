@@ -1,6 +1,6 @@
 ---
 title: "windows重装"
-categories: ["编程"]
+categories: [编程]
 tags: ["系统"]
 ---
 ## 更新

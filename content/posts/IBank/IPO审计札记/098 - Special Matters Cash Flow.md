@@ -1,6 +1,6 @@
 ---
 title: "098-特殊事项现金流"
-categories: ["投行"]
+categories: [投行]
 tags: ["IPO审计手札"]
 date: 2023-08-01
 ---

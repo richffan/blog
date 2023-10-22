@@ -1,6 +1,6 @@
 ---
 title: "112-审计行业会好吗"
-categories: ["投行"]
+categories: [投行]
 tags: ["IPO审计手札"]
 date: 2023-08-01
 ---

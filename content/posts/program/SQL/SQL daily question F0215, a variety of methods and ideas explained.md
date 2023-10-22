@@ -1,6 +1,6 @@
 ---
 title: "SQL每日一题F0215，多种方法及思路讲解"
-categories: ["编程"]
+categories: [编程]
 tags: ["SQL"]
 date: 2023-08-01
 ---

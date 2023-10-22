@@ -1,6 +1,6 @@
 ---
 title: "128-要怎么努力，才能成为一个很厉害的人"
-categories: ["投行"]
+categories: [投行]
 tags: ["IPO审计手札"]
 date: 2023-08-01
 ---

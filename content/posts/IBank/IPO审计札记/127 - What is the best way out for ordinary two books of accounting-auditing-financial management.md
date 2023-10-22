@@ -1,6 +1,6 @@
 ---
 title: "127-普通二本会计|审计|财管最好的出路是什么"
-categories: ["投行"]
+categories: [投行]
 tags: ["IPO审计手札"]
 date: 2023-08-01
 ---

@@ -1,7 +1,7 @@
 ---
 title: '每天一个linux命令（40）: traceroute'
 date: 2017-01-09 10:56:53
-categories: ["编程"]
+categories: [编程]
 tags: ["linux命令"]
 ---
 　　通过traceroute我们可以知道信息从你的计算机到互联网另一端的主机是走的什么路径。当然每次数据包由某一同样的出发点（source）到达某一同样的目的地(destination)走的路径可能会不一样，但基本上来说大部分时候所走的路由是相同的。linux系统中，我们称之为traceroute,在MS Windows中为tracert。 traceroute通过发送小的数据包到目的设备直到其返回，来测量其需要多长时间。一条路径上的每个设备traceroute要测3次。输出结果中包括每次测试的时间(ms)和设备的名称（如有的话）及其IP地址。

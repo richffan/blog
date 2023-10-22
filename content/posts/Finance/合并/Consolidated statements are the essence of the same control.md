@@ -1,6 +1,6 @@
 ---
 title: "合并报表同一控制的本质"
-categories: ["审计"]
+categories: [审计]
 tags: ["合并"]
 date: 2023-08-01
 ---

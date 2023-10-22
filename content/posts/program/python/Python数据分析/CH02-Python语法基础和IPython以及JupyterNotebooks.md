@@ -1,6 +1,6 @@
 ---
 title: "第二章 Python 语法基础，IPython 和 Jupyter Notebooks"
-categories: ["编程"]
+categories: [编程]
 tags: ["python"]
 date: 2023-09-25
 ---

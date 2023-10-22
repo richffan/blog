@@ -1,7 +1,7 @@
 ---
 title: '每天一个linux命令（56）: tailf'
 date: 2017-02-20 15:11:06
-categories: ["编程"]
+categories: [编程]
 tags: ["linux命令"]
 ---
 　　tailf 一个实时监听文件或日志的强大的命令

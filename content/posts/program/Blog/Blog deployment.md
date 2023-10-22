@@ -1,6 +1,6 @@
 ---
 title: "博客部署"
-categories: ["编程"]
+categories: [编程]
 tags: ["博客"]
 date: 2022-01-01
 ---

@@ -1,7 +1,7 @@
 ---
 title: i多表处理
 date: 2023-05-15 00:00:00
-categories: ["编程"]
+categories: [编程]
 tags: ["VBA"]
 ---
 

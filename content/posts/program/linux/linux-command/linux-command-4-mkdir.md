@@ -1,7 +1,7 @@
 ---
 title: '每天一个linux命令（4）: mkdir'
 date: 2016-12-04 09:27:32
-categories: ["编程"]
+categories: [编程]
 tags: ["linux命令"]
 ---
 　　linux mkdir 命令用来创建指定的名称的目录，要求创建目录的用户在当前目录中具有写权限，并且指定的目录名不能是当前目录中已有的目录。

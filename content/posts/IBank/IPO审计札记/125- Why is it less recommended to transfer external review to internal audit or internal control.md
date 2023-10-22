@@ -1,6 +1,6 @@
 ---
 title: "125-为什么不太建议外审转内审抑或内控"
-categories: ["投行"]
+categories: [投行]
 tags: ["IPO审计手札"]
 date: 2023-08-01
 ---

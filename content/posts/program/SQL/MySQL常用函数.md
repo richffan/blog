@@ -1,6 +1,6 @@
 ---
 title: "MySQL常用函数"
-categories: ["编程"]
+categories: [编程]
 tags: ["SQL"]
 date: 2023-09-19
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Python 语法"
-categories: ["编程"]
+categories: [编程]
 tags: ["python"]
 date: 2023-09-25
 ---

@@ -1,6 +1,6 @@
 ---
 title: "052-使用权资产和租赁负债审计要点"
-categories: ["投行"]
+categories: [投行]
 tags: ["IPO审计手札"]
 date: 2023-08-01
 ---

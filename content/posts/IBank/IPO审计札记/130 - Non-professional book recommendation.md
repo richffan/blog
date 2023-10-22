@@ -1,6 +1,6 @@
 ---
 title: "130-非专业书籍推荐"
-categories: ["投行"]
+categories: [投行]
 tags: ["IPO审计手札"]
 date: 2023-08-01
 ---

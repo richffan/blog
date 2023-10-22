@@ -1,7 +1,7 @@
 ---
 title: '每天一个linux命令（3）: pwd'
 date: 2016-12-03 09:15:52
-categories: ["编程"]
+categories: [编程]
 tags: ["linux命令"]
 ---
 　　Linux中用 pwd 命令来查看”当前工作目录“的完整路径。 简单得说，每当你在终端进行操作时，你都会有一个当前工作目录。

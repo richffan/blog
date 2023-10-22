@@ -1,6 +1,6 @@
 ---
 title: "093-会计利润与所得税费用调整过程"
-categories: ["投行"]
+categories: [投行]
 tags: ["IPO审计手札"]
 date: 2023-08-01
 ---

@@ -1,7 +1,7 @@
 ---
 title: '每天一个linux命令（31）: du'
 date: 2016-12-31 14:36:01
-categories: ["编程"]
+categories: [编程]
 tags: ["linux命令"]
 ---
 　　Linux du命令也是查看使用空间的，但是与df命令不同的是Linux du命令是对文件和目录磁盘使用的空间的查看，还是和df命令有一些区别的.

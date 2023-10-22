@@ -1,6 +1,6 @@
 ---
 title: "附录B-更多关于IPython的内容"
-categories: ["编程"]
+categories: [编程]
 tags: ["python"]
 date: 2023-09-25
 ---

@@ -1,6 +1,6 @@
 ---
 title: "第八章 错误、调试和测试"
-categories: ["编程"]
+categories: [编程]
 tags: ["python"]
 date: 2023-09-25
 ---

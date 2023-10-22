@@ -1,6 +1,6 @@
 ---
 title: "007-审计调整&心理建设"
-categories: ["投行"]
+categories: [投行]
 tags: ["IPO审计手札"]
 date: 2023-08-01
 ---

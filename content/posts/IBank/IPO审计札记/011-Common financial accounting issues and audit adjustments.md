@@ -1,6 +1,6 @@
 ---
 title: "011-常见财务核算问题与审计调整事项"
-categories: ["投行"]
+categories: [投行]
 tags: ["IPO审计手札"]
 date: 2023-08-01
 ---

@@ -1,6 +1,6 @@
 ---
 title: "008-八大审计三年，C 社治好了我的精神内耗（CPA 研习社）"
-categories: ["投行"]
+categories: [投行]
 tags: ["IPO审计手札"]
 date: 2023-08-01
 ---

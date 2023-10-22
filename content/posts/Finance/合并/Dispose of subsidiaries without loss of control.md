@@ -1,6 +1,6 @@
 ---
 title: "不丧失控制权处置子公司"
-categories: ["审计"]
+categories: [审计]
 tags: ["合并"]
 date: 2023-08-01
 ---

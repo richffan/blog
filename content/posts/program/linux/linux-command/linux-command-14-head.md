@@ -1,7 +1,7 @@
 ---
 title: '每天一个linux命令（14）: head'
 date: 2016-12-14 14:35:49
-categories: ["编程"]
+categories: [编程]
 tags: ["linux命令"]
 ---
 　　head 与 tail 就像它的名字一样的浅显易懂，它是用来显示开头或结尾某个数量的文字区块，head 用来显示档案的开头至标准输出中，而 tail 想当然尔就是看档案的结尾。

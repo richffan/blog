@@ -1,6 +1,6 @@
 ---
 title: "MySQL常用30种SQL查询语句优化方法"
-categories: ["编程"]
+categories: [编程]
 tags: ["SQL"]
 date: 2023-08-01
 ---

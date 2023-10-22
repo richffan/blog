@@ -1,6 +1,6 @@
 ---
 title: "archlinux"
-categories: ["编程"]
+categories: [编程]
 tags: ["系统"]
 ---
 

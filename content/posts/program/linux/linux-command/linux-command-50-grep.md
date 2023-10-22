@@ -1,7 +1,7 @@
 ---
 title: '每天一个linux命令（50）: grep'
 date: 2017-01-18 10:12:46
-categories: ["编程"]
+categories: [编程]
 tags: ["linux命令"]
 ---
 　　Linux系统中grep命令是一种强大的文本搜索工具，它能使用正则表达式搜索文本，并把匹 配的行打印出来。grep全称是Global Regular Expression Print，表示全局正则表达式版本，它的使用权限是所有用户。

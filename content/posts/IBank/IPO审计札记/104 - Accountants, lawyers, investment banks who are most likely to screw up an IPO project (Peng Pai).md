@@ -1,6 +1,6 @@
 ---
 title: "104-会计师、律师、投行谁最有可能搞砸一个 IPO 项目（鹏拍）"
-categories: ["投行"]
+categories: [投行]
 tags: ["IPO审计手札"]
 date: 2023-08-01
 ---

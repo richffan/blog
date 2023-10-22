@@ -1,7 +1,7 @@
 ---
 title: 600 条最强 Linux 命令总结
 date: 2017-09-06 23:01:31
-categories: ["编程"]
+categories: [编程]
 tags: ['linux']
 ---
 
