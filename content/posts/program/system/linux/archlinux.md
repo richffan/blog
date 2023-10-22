@@ -1,7 +1,9 @@
 ---
-title: "archlinux"
-categories: [编程]
-tags: ["系统"]
+title: Linux
+categories: ["系统"]
+tags:
+    - linux
+date: 2020-01-01 10:00:00
 ---
 
 ### 安装
