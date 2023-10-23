@@ -1,8 +1,8 @@
 ---
 title: h行列校验
-date: 2023-05-15 00:00:00
+date: 2023-05-15
 categories: [编程]
-tags: ["VBA"]
+tags: [VBA]
 ---
 
 ## h行列校验
