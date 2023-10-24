@@ -9,7 +9,7 @@ tags: [VBA]
 
 <!--more-->
 
-```VBA
+```vb
 Sub 宋体宋体(control As IRibbonControl)
     '选中范围字体为宋体+宋体
     With Selection.Font

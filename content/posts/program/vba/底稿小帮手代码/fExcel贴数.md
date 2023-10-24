@@ -10,7 +10,7 @@ tags: [VBA]
 
 <!--more-->
 
-```VBA
+```vb
 Sub 粘贴格式文本(control As IRibbonControl)
     Set xl = GetObject(, "excel.application")
     xlr = xl.Selection.Rows.Count
