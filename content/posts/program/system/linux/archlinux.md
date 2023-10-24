@@ -1,6 +1,6 @@
 ---
 title: Linux
-categories: ["系统"]
+categories: [系统]
 tags:
     - linux
 date: 2020-01-01 10:00:00

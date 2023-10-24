@@ -1,9 +1,8 @@
 ---
 title: QEMU - QuickStart
 date: 2023-08-06 18:00:00
-categories: ["系统"]
-tags:
-    - qemu
+categories: [系统]
+tags: [qemu]
 ---
 <https://cyan-io.github.io/>
 ## Intro

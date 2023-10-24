@@ -1,8 +1,14 @@
-### 前言
+---
+title: Golang入门笔记-CH04-Go语言流程控制
+categories: [编程]
+tags: [Golang]
+date: 2022-10-01
+---
+## 前言
 
 流程控制是每门语言控制程序逻辑和执行顺序的重要组成部分，Go 语言中常见的流程控制有 `if`，`for`，`switch`；`break`、`continue` 和 `goto` 是为了简化流程控制，降低代码复杂度。
 
-### if-else
+## if-else
 
 `if` 分支结构的基本写法为：
 
@@ -62,7 +68,7 @@ if a := 10; a > 6 {
 }
 ```
 
-### for
+## for
 
 `for` 语句常用于循环，例如循环遍历字符串、数组、切片和Map等类型数据，Go 语言中没有`while`循环语句。
 
@@ -137,7 +143,7 @@ for {
 }
 ```
 
-### for range
+## for range
 
 `for range` 是**键值循环**，一般用于遍历字符串、数组、切片、map 和 channel。
 
@@ -176,7 +182,7 @@ func main() {
 1 女
 ```
 
-### switch
+## switch
 
 `switch` 语句和 `if` 语句类似，一般用于多条件判断，且这些条件易于枚举：
 
@@ -284,7 +290,7 @@ a
 b
 ```
 
-### break
+## break
 
 `break` 用于主动跳出循环，例如：
 
@@ -305,7 +311,7 @@ func main() {
 
 上述代码中，当 `i`  的值为 3 时，将会跳出循环，所以只会打印 0，1 和 2。
 
-### continue
+## continue
 
 `continue` 用于跳过这次循环，继续执行下一次循环，注意和 `break`  语句的区别。
 
@@ -333,7 +339,7 @@ func main() {
 4
 ```
 
-### goto
+## goto
 
 我们可以用 `goto` 语句跳转到指定标签，来简化代码。但同时，代码的可读性会下降，一般在编码中，尽量不要使用 `goto` 语句。
 
