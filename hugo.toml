@@ -710,7 +710,7 @@ theme = "fixIt"
   [params.ibruce]
     enable = true
     # 在文章中开启
-    enablePost = false
+    enablePost = true
 
   # 网站验证代码，用于 Google/Bing/Yandex/Pinterest/Baidu/360/Sogou
   [params.verification]
