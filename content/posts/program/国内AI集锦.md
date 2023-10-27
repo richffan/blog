@@ -1,7 +1,7 @@
 ---
-title: 审计工具
+title: 国内AI集锦
 categories: [编程]
-tags: [审计工具]
+tags: [AI]
 date: 2022-10-27
 ---
 • 科大讯飞（讯飞星火）：https://xinghuo.xfyun.cn/
