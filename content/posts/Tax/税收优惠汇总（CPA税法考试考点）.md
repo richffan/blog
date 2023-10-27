@@ -2,8 +2,7 @@
 title: 税收优惠汇总（CPA税法考试考点）
 date: 2023-07-26 11:12:00
 categories: ["注会"]
-tags:
-  - 税法
+tags: [税法]
 ---
 
 

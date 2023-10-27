@@ -2,8 +2,7 @@
 title: IT审计的实务操作
 date: 2023-08-15 00:00:00
 categories: [审计]
-tags:
-  - IT审计
+tags: [IT审计]
 ---
 目录
 

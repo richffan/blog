@@ -2,8 +2,7 @@
 title: IT审计操作流程
 date: 2023-08-15 00:00:00
 categories: [审计]
-tags:
-  - IT审计
+tags: [IT审计]
 ---
 
 ## 一、审计计划阶段

@@ -3,8 +3,7 @@ title: duckdb从入门到精通：安装篇
 date: 2023-05-05 14:19:09
 categories:
   - 审计
-tags:
-  - IT审计
+tags: [IT审计]
 ---
 
 DuckDB是一个开源免费的高性能的列式数据库系统，类似 SQLite 易用，又具备 clickhouse 的性能。

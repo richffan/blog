@@ -2,8 +2,7 @@
 title: IT审计可能使用到的数据库及工具
 date: 2023-05-03 14:19:09
 categories: [审计]
-tags:
-  - IT审计
+tags: [IT审计]
 ---
 
 ## 数据库
