@@ -1,8 +1,8 @@
 ---
-title: 'IPO审计笔记 1.0 货币资金'
+title: IPO审计笔记 1.0 货币资金
 date: 2023-09-22
 categories: [审计]
-tags:  ['IPO审计笔记']
+tags:  [IPO审计笔记]
 ---
 
 ## 01 闲扯两句
