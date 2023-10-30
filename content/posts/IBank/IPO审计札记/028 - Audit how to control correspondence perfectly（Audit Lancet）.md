@@ -1,7 +1,7 @@
 ---
 title: "028-审计如何把往来函证控制完美（Audit Lancet）"
 categories: [投行]
-tags: ["IPO审计手札"]
+tags: [IPO审计手札]
 date: 2023-08-01
 ---
 ![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/028-审计如何把往来函证控制完美_1.webp)|

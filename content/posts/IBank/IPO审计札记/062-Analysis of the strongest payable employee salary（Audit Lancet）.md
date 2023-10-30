@@ -1,7 +1,7 @@
 ---
 title: "062-最强应付职工薪酬解析（Audit Lancet）"
 categories: [投行]
-tags: ["IPO审计手札"]
+tags: [IPO审计手札]
 date: 2023-08-01
 ---
 ![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_1.webp)

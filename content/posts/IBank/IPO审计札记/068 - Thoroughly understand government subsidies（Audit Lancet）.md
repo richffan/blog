@@ -1,7 +1,7 @@
 ---
 title: "068-彻底搞懂政府补助（Audit Lancet）"
 categories: [投行]
-tags: ["IPO审计手札"]
+tags: [IPO审计手札]
 date: 2023-08-01
 ---
 一、理论基础

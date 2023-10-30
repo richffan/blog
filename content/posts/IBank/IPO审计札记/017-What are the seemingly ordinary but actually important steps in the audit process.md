@@ -1,7 +1,7 @@
 ---
 title: "017-审计过程中，有哪些看似普通但实际很重要的步骤"
 categories: [投行]
-tags: ["IPO审计手札"]
+tags: [IPO审计手札]
 date: 2023-08-01
 ---
 ## first  blood：了解内控中的穿行测试。
