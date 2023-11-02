@@ -158,7 +158,7 @@ theme = "fixIt"
   #  面包屑导航配置
   [params.breadcrumb]
     enable = true
-    sticky = false
+    sticky = true
     showHome = false
 
   # 页面底部信息配置
