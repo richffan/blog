@@ -189,7 +189,7 @@ theme = "fixIt"
       animate = true
       icon = "fa-solid fa-heartbeat"
       pre = ""
-      value = "" # e.g. "2021-12-18T16:15:22+08:00"
+      value = "2020-01-01T00:00:00+08:00" # e.g. "2021-12-18T16:15:22+08:00"
     #  页面底部行排序，可选值：["first", 0, 1, 2, 3, 4, 5, "last"]
     [params.footer.order]
       powered = 0
