@@ -1,5 +1,6 @@
 ---
 title: "第十三章 Python 建模库介绍"
+type: posts
 categories: [编程]
 tags: ["python"]
 date: 2023-09-25

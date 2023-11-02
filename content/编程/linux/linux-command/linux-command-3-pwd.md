@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（3）: pwd'
 date: 2016-12-03 09:15:52
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

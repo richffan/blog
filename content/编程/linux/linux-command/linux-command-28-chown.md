@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（28）: chown'
 date: 2016-12-28 09:51:30
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

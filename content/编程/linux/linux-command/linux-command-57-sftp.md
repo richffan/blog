@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（57）: sftp'
 date: 2017-03-05 16:29:38
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

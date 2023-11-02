@@ -1,5 +1,6 @@
 ---
 title: "给定用户登录表，求表中每一天的3天留存率"
+type: posts
 categories: [编程]
 tags: ["SQL"]
 date: 2023-08-01

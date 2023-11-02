@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（14）: head'
 date: 2016-12-14 14:35:49
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "123-人间理想的会计师事务所"
+type: posts
 categories: [投行]
 tags: [IPO审计手札]
 date: 2023-08-01

@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（30）: df'
 date: 2016-12-30 14:23:31
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

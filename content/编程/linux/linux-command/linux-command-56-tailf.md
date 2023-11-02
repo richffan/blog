@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（56）: tailf'
 date: 2017-02-20 15:11:06
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

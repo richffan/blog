@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（54）: at'
 date: 2017-01-22 10:23:44
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

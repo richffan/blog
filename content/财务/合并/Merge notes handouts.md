@@ -1,5 +1,6 @@
 ---
 title: "合并附注讲义"
+type: posts
 categories: [审计]
 tags: [合并]
 date: 2023-08-01

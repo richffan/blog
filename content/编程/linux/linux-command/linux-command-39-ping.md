@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（39）: ping'
 date: 2017-01-08 10:24:50
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

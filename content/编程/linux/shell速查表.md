@@ -1,6 +1,7 @@
 ---
 title: shell速查表
 date: 2018-09-08 11:48:24
+type: posts
 categories: ['编程']
 tags: ['shell','linux']
 ---

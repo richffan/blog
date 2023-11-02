@@ -1,5 +1,6 @@
 ---
 title: "006-如何确定审计方式&如何分配重要性水平"
+type: posts
 categories: [投行]
 tags: [IPO审计手札]
 date: 2023-08-01

@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（52）: ps'
 date: 2017-01-20 09:46:16
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

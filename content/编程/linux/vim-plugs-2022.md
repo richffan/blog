@@ -2,6 +2,7 @@
 title: 2022年我在使用这些vim插件
 date: 2022-06-27 15:07:39
 hidden: true
+type: posts
 categories: ['编程']
 tags: ['vim','neovim']
 ---

@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（24）: tar'
 date: 2016-12-24 10:24:17
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

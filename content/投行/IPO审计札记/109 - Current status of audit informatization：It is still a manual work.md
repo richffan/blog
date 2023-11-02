@@ -1,5 +1,6 @@
 ---
 title: "109-审计信息化现状：时至今日还是体力活"
+type: posts
 categories: [投行]
 tags: [IPO审计手札]
 date: 2023-08-01

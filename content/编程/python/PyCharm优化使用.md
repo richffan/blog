@@ -1,5 +1,6 @@
 ---
 title: "PyCharm 优化使用"
+type: posts
 categories: [编程]
 tags: ["python"]
 date: 2023-09-25

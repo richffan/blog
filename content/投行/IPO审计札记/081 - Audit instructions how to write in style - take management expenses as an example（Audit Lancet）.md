@@ -1,5 +1,6 @@
 ---
 title: "081-审计说明如何写出格调——以管理费用为例（Audit Lancet）"
+type: posts
 categories: [投行]
 tags: [IPO审计手札]
 date: 2023-08-01

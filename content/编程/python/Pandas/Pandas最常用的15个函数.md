@@ -1,5 +1,6 @@
 ---
 title: 'Pandas最常用的15个函数'
+type: posts
 categories: ['编程']
 tags: ['Pandas']
 date: 2023-09-19

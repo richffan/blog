@@ -1,5 +1,6 @@
 ---
 title: 国内AI集锦
+type: posts
 categories: [编程]
 tags: [AI]
 date: 2022-10-27

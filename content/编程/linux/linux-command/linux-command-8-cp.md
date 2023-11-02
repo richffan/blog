@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（8）: cp'
 date: 2016-12-08 16:31:43
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

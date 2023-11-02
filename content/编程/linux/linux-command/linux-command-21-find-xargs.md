@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（21）: find命令之xargs'
 date: 2016-12-21 11:08:01
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

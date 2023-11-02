@@ -1,6 +1,7 @@
 ---
 title: docker报错集锦
 date: 2017-09-25 10:03:50
+type: posts
 categories: ['编程']
 tags: ['docker']
 ---

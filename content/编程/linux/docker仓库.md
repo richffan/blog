@@ -1,6 +1,7 @@
 ---
 title: docker仓库
 date: 2017-05-23 21:15:52
+type: posts
 categories: ['编程']
 tags: ['docker','docker仓库']
 ---

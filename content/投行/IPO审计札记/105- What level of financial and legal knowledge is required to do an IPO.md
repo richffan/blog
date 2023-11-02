@@ -1,5 +1,6 @@
 ---
 title: "105-想去做 IPO 需要对财务和法律了解到什么程度"
+type: posts
 categories: [投行]
 tags: [IPO审计手札]
 date: 2023-08-01

@@ -1,6 +1,7 @@
 ---
 title: WSL（适用于 Linux 的 Windows 子系统）Kali在线安装
 date: 2023-07-27 18:00:00
+type: posts
 categories: [系统]
 tags: [Windows,kali]
 ---

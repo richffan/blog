@@ -1,5 +1,6 @@
 ---
 title: "001-入门常识之企业内部控制"
+type: posts
 categories: [投行]
 tags: [IPO审计手札]
 date: 2023-08-01

@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（58）: sort'
 date: 2017-05-23 11:44:12
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

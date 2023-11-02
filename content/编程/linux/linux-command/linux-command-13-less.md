@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（13）: less'
 date: 2016-12-13 21:46:14
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

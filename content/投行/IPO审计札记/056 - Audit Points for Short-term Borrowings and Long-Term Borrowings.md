@@ -1,5 +1,6 @@
 ---
 title: "056-短期借款和长期借款审计要点"
+type: posts
 categories: [投行]
 tags: [IPO审计手札]
 date: 2023-08-01

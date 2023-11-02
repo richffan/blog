@@ -1,5 +1,6 @@
 ---
 title: "020-IPO上市可行性自我诊断的六十条黄金法则（鹏拍）"
+type: posts
 categories: [投行]
 tags: [IPO审计手札]
 date: 2023-08-01

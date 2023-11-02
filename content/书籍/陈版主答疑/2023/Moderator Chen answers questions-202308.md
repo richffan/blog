@@ -1,6 +1,7 @@
 ---
 title: '陈版主答疑-202308'
 date: 2023-10-25
+type: posts
 categories: [注会,书籍]
 tags: [陈版主答疑]
 ---

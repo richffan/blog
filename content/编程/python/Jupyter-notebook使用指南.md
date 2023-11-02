@@ -1,5 +1,6 @@
 ---
 title: "Jupyter notebook 使用指南"
+type: posts
 categories: [编程]
 tags: ["python"]
 date: 2023-09-25

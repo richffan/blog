@@ -1,6 +1,7 @@
 ---
 title: 审计技能|Python语句（四）：常用查询函数
 date: 2023-08-15 17:56:00
+type: posts
 categories: [审计]
 tags:  ['python']
 ---

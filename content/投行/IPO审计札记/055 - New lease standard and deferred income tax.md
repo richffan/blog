@@ -1,5 +1,6 @@
 ---
 title: "055-新租赁准则与递延所得税"
+type: posts
 categories: [投行]
 tags: [IPO审计手札]
 date: 2023-08-01

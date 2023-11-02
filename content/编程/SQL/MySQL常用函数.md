@@ -1,5 +1,6 @@
 ---
 title: "MySQL常用函数"
+type: posts
 categories: [编程]
 tags: ["SQL"]
 date: 2023-09-19

@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（32）: top'
 date: 2017-01-01 19:31:28
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

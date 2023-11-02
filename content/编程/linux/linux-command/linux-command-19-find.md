@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（19）: find命令概览'
 date: 2016-12-19 15:19:10
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

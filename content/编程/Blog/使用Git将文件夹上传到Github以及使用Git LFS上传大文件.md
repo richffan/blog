@@ -1,5 +1,6 @@
 ---
 title: 使用Git将文件夹上传到Github以及使用Git LFS上传大文件
+type: posts
 categories: [编程]
 tags: ["blog"]
 date: 2022-02-23 17:56:00

@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（41）: netstat'
 date: 2017-01-10 09:54:16
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

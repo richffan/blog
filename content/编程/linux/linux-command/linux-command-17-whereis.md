@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（17）: whereis'
 date: 2016-12-17 10:42:58
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

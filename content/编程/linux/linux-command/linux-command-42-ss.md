@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（42）: ss'
 date: 2017-01-11 10:34:47
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

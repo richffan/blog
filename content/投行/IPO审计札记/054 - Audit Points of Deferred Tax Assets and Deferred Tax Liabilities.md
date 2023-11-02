@@ -1,5 +1,6 @@
 ---
 title: "054-递延所得税资产和递延所得税负债审计要点"
+type: posts
 categories: [投行]
 tags: [IPO审计手札]
 date: 2023-08-01

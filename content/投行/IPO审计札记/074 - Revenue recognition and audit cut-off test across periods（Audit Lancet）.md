@@ -1,5 +1,6 @@
 ---
 title: "074-跨期确认收入与审计截止测试（Audit Lancet）"
+type: posts
 categories: [投行]
 tags: [IPO审计手札]
 date: 2023-08-01

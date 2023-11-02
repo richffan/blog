@@ -1,5 +1,6 @@
 ---
 title: Golang入门笔记-CH01-Go语言介绍与安装
+type: posts
 categories: [编程]
 tags: [Golang]
 date: 2022-10-01

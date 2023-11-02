@@ -1,6 +1,7 @@
 ---
 title: 进入docker容器命令制作
 date: 2017-06-01 17:25:11
+type: posts
 categories: ['编程']
 tags: ['docker']
 ---

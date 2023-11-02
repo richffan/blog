@@ -1,5 +1,6 @@
 ---
 title: Linux
+type: posts
 categories: [系统]
 tags:
     - linux

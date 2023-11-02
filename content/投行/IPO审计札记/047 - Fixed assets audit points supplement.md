@@ -1,5 +1,6 @@
 ---
 title: "047-固定资产审计要点补充"
+type: posts
 categories: [投行]
 tags: [IPO审计手札]
 date: 2023-08-01

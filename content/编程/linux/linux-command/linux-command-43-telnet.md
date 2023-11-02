@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（43）: telnet'
 date: 2017-01-12 09:24:01
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

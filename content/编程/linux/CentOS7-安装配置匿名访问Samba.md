@@ -1,6 +1,7 @@
 ---
 title: CentOS7安装配置匿名访问Samba
 date: 2017-07-03 19:40:14
+type: posts
 categories: ['编程']
 tags: ['samba']
 ---

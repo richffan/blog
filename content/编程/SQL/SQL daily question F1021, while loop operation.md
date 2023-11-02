@@ -1,5 +1,6 @@
 ---
 title: "SQL每日一题F1021，while循环操作"
+type: posts
 categories: [编程]
 tags: ["SQL"]
 date: 2023-08-01

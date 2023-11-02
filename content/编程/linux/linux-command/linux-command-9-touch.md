@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（9）: touch'
 date: 2016-12-09 07:15:12
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

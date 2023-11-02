@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（26）: chmod'
 date: 2016-12-26 20:22:43
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

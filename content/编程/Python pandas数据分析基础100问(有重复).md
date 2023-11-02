@@ -1,5 +1,6 @@
 ---
 title: "Python pandas数据分析基础100问(有重复)"
+type: posts
 categories: [编程]
 tags: ["pandas"]
 date: 2023-09-25

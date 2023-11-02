@@ -1,6 +1,7 @@
 ---
 title: linux无损调整分区大小
 date: 2017-05-17 22:00:42
+type: posts
 categories: ['编程']
 tags: ['运维','磁盘分区']
 ---

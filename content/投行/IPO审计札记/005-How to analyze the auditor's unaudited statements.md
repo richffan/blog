@@ -1,5 +1,6 @@
 ---
 title: "005-审计师拿到未审报表如何分析"
+type: posts
 categories: [投行]
 tags: [IPO审计手札]
 date: 2023-08-01

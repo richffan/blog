@@ -1,5 +1,6 @@
 ---
 title: "110-审计信息化现状与 Excel"
+type: posts
 categories: [投行]
 tags: [IPO审计手札]
 date: 2023-08-01

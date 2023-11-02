@@ -1,5 +1,6 @@
 ---
 title: "064-应付职工薪酬和应交税费审计要点补充"
+type: posts
 categories: [投行]
 tags: [IPO审计手札]
 date: 2023-08-01

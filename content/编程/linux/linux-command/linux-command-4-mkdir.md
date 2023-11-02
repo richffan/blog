@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（4）: mkdir'
 date: 2016-12-04 09:27:32
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

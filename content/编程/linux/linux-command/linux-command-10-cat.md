@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（10）: cat'
 date: 2016-12-10 10:52:50
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

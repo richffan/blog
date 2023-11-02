@@ -1,5 +1,6 @@
 ---
 title: "021-相较审计|券商如何对制造业进行财务核查与风险揭示"
+type: posts
 categories: [投行]
 tags: [IPO审计手札]
 date: 2023-08-01

@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（29）: /etc/group文件详解'
 date: 2016-12-29 14:13:05
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

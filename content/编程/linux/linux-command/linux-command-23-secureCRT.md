@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（23）: 用SecureCRT来上传和下载文件'
 date: 2016-12-23 09:48:15
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

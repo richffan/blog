@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（55）: crontab'
 date: 2017-01-23 10:44:50
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

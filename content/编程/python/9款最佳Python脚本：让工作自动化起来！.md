@@ -1,6 +1,7 @@
 ---
 title: 9款最佳Python脚本：让工作自动化起来！
 date: 2023-10-22
+type: posts
 categories: [编程]
 tags:  [python]
 ---

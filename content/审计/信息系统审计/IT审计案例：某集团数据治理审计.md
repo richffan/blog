@@ -1,6 +1,7 @@
 ---
 title: IT审计案例：某集团数据治理审计
 date: 2023-10-18
+type: posts
 categories: [审计]
 tags: [IT审计]
 ---

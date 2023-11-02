@@ -1,5 +1,6 @@
 ---
 title: "037-其他应收款审计底稿经验（一只注会喵）"
+type: posts
 categories: [投行]
 tags: [IPO审计手札]
 date: 2023-08-01

@@ -1,5 +1,6 @@
 ---
 title: docsify
+type: posts
 categories: [编程]
 tags: ["blog"]
 date: 2022-02-23 17:56:00

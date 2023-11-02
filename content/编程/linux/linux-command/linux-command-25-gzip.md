@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（25）: gzip'
 date: 2020-12-25
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

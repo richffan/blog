@@ -1,5 +1,6 @@
 ---
 title: Golang入门笔记-CH09-反射
+type: posts
 categories: [编程]
 tags: [Golang]
 date: 2022-10-01

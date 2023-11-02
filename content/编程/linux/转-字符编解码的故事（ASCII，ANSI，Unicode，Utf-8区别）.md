@@ -1,6 +1,7 @@
 ---
 title: '[转]字符编解码的故事（ASCII，ANSI，Unicode，Utf-8区别）'
 date: 2017-09-25 19:15:00
+type: posts
 categories: ['编程']
 tags: ['encoding']
 ---

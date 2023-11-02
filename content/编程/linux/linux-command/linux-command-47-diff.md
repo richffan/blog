@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（47）: diff'
 date: 2017-01-15 14:08:08
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

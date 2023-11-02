@@ -1,5 +1,6 @@
 ---
 title: "115-四大之外国内还有哪些较为突出的会计师事务所"
+type: posts
 categories: [投行]
 tags: [IPO审计手札]
 date: 2023-08-01

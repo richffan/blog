@@ -1,5 +1,6 @@
 ---
 title: "077-IPO 案例：返修比例较高，验收还有用否"
+type: posts
 categories: [投行]
 tags: [IPO审计手札]
 date: 2023-08-01

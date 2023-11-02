@@ -1,6 +1,7 @@
 ---
 title: '每天一个linux命令（18）: locate'
 date: 2016-12-18 15:09:28
+type: posts
 categories: [编程]
 tags: ["linux命令"]
 ---

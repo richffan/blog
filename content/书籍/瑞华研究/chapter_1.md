@@ -1,6 +1,7 @@
 ---
 title: '瑞华研究-第一章'
 date: 2023-08-25
+type: posts
 categories: [注会,书籍]
 tags: [瑞华研究]
 ---
