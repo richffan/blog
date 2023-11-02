@@ -2,7 +2,7 @@
 title:  '陈版主答疑-202108'
 date: 2023-08-25
 type: posts
-categories: [注会,书籍]
+categories: [书籍]
 tags: [陈版主答疑]
 ---
 ## 中国会计视野论坛-陈版主答疑 2021

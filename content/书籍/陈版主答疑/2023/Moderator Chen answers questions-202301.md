@@ -2,7 +2,7 @@
 title: '陈版主答疑-202301'
 date: 2023-08-25
 type: posts
-categories: [注会,书籍]
+categories: [书籍]
 tags: [陈版主答疑]
 ---
 ## 中国会中国会 计视 野野 论坛-陈 版主答疑版主答疑
