@@ -1,12 +1,42 @@
 ---
 title: 关于 樊刹
 date: 2020-01-01
-draft: false
-comment: false
+comment: true
 pageStyle: wide
 lightgallery: true
 math: true
 aliases: /about/
+description: 编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,
+keywords:
+  - Hugo
+  - FixIt
+  - richfan
+  - 编程
+  - 投行
+  - 学习
+  - blog
+  - excel
+  - golang
+  - linux
+  - python
+  - spider
+  - sql
+  - system
+  - vba
+  - emoji
+  - git
+  - pandas
+  - ibank
+  - audit
+  - program
+  - design
+  - cook
+  - law
+  - book
+  - tax
+  - ipo
+  - finance
+  - accounting
 ---
 
 ## 关于博主
