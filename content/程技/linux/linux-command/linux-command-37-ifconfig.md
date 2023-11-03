@@ -2,7 +2,7 @@
 title: '每天一个linux命令（37）: ifconfig'
 date: 2017-01-06 09:57:01
 type: posts
-categories: [编程]
+categories: [程技]
 tags: ["linux命令"]
 ---
 　　许多windows非常熟悉ipconfig命令行工具，它被用来获取网络接口配置信息并对此进行修改。Linux系统拥有一个类似的工具，也就是ifconfig(interfaces config)。通常需要以root身份登录或使用sudo以便在Linux机器上使用ifconfig工具。依赖于ifconfig命令中使用一些选项属性，ifconfig工具不仅可以被用来简单地获取网络接口配置信息，还可以修改这些配置。

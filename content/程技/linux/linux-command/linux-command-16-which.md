@@ -2,7 +2,7 @@
 title: '每天一个linux命令（16）: which'
 date: 2016-12-16 11:25:49
 type: posts
-categories: [编程]
+categories: [程技]
 tags: ["linux命令"]
 ---
 　　我们经常在linux要查找某个文件，但不知道放在哪里了，可以使用下面的一些命令来搜索：

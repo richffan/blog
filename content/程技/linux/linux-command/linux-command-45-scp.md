@@ -2,7 +2,7 @@
 title: '每天一个linux命令（45）: scp'
 date: 2017-01-13 10:53:48
 type: posts
-categories: [编程]
+categories: [程技]
 tags: ["linux命令"]
 ---
 　　scp是secure copy的简写，用于在Linux下进行远程拷贝文件的命令，和它类似的命令有cp，不过cp只是在本机进行拷贝不能跨服务器，而且scp传输是加密的。可能会稍微影响一下速度。当你服务器硬盘变为只读 read only system时，用scp可以帮你把文件移出来。另外，scp还非常不占资源，不会提高多少系统负荷，在这一点上，rsync就远远不及它了。虽然 rsync比scp会快一点，但当小文件众多的情况下，rsync会导致硬盘I/O非常高，而scp基本不影响系统正常使用。

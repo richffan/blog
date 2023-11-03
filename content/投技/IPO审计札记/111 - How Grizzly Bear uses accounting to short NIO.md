@@ -1,7 +1,7 @@
 ---
 title: "111-灰熊是如何运用会计手段做空蔚来"
 type: posts
-categories: [投行]
+categories: [投技]
 tags: [IPO审计手札]
 date: 2023-08-01
 ---

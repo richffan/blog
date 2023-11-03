@@ -2,7 +2,7 @@
 title: IT审计操作流程
 date: 2023-08-15 00:00:00
 type: posts
-categories: [审计]
+categories: [审技]
 tags: [IT审计]
 ---
 

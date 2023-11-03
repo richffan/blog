@@ -1,7 +1,7 @@
 ---
 title: "博客部署"
 type: posts
-categories: [编程]
+categories: [程技]
 tags: ["博客"]
 date: 2022-01-01
 ---

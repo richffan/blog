@@ -1,7 +1,7 @@
 ---
 title: IPO企业各会计科目核查程序
 type: posts
-categories: [投行]
+categories: [投技]
 tags: [IPO]
 date: 2023-10-30
 ---

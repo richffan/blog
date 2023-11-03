@@ -2,7 +2,7 @@
 title: '每天一个linux命令（58）: sort'
 date: 2017-05-23 11:44:12
 type: posts
-categories: [编程]
+categories: [程技]
 tags: ["linux命令"]
 ---
 sort是在Linux里非常常用的一个命令，管排序的。

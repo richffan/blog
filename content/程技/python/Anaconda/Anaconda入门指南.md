@@ -1,7 +1,7 @@
 ---
 title: "Anaconda 入门指南"
 type: posts
-categories: [编程]
+categories: [程技]
 tags: ["python"]
 date: 2023-09-25
 ---

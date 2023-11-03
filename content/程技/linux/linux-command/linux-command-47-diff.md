@@ -2,7 +2,7 @@
 title: '每天一个linux命令（47）: diff'
 date: 2017-01-15 14:08:08
 type: posts
-categories: [编程]
+categories: [程技]
 tags: ["linux命令"]
 ---
 　　diff 命令是 linux上非常重要的工具，用于比较文件的内容，特别是比较两个版本不同的文件以找到改动的地方。diff在命令行中打印每一个行的改动。最新版本的diff还支持二进制文件。diff程序的输出被称为补丁 (patch)，因为Linux系统中还有一个patch程序，可以根据diff的输出将a.c的文件内容更新为b.c。diff是svn、cvs、git等版本控制工具不可或缺的一部分。

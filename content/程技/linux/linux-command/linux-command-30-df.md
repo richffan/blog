@@ -2,7 +2,7 @@
 title: '每天一个linux命令（30）: df'
 date: 2016-12-30 14:23:31
 type: posts
-categories: [编程]
+categories: [程技]
 tags: ["linux命令"]
 ---
 　　linux中df命令的功能是用来检查linux服务器的文件系统的磁盘空间占用情况。可以利用该命令来获取硬盘被占用了多少空间，目前还剩下多少空间等信息。

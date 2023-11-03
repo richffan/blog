@@ -1,7 +1,7 @@
 ---
 title: "124-事务所跑路|如何提高获得内审 offer 的几率（小职员谈内审）"
 type: posts
-categories: [投行]
+categories: [投技]
 tags: [IPO审计手札]
 date: 2023-08-01
 ---

@@ -1,7 +1,7 @@
 ---
 title: "live_max_online"
 type: posts
-categories: [编程]
+categories: [程技]
 tags: ["SQL"]
 date: 2023-08-01
 ---

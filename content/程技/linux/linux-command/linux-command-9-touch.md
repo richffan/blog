@@ -2,7 +2,7 @@
 title: '每天一个linux命令（9）: touch'
 date: 2016-12-09 07:15:12
 type: posts
-categories: [编程]
+categories: [程技]
 tags: ["linux命令"]
 ---
 　　linux的touch命令不常用，一般在使用make的时候可能会用到，用来修改文件时间戳，或者新建一个不存在的文件。

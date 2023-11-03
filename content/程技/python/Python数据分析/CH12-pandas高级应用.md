@@ -1,7 +1,7 @@
 ---
 title: "第十二章 Pandas 高级应用"
 type: posts
-categories: [编程]
+categories: [程技]
 tags: ["python"]
 date: 2023-09-25
 ---

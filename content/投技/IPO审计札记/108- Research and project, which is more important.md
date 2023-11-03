@@ -1,7 +1,7 @@
 ---
 title: "108-考证与做项目，孰轻孰重"
 type: posts
-categories: [投行]
+categories: [投技]
 tags: [IPO审计手札]
 date: 2023-08-01
 ---

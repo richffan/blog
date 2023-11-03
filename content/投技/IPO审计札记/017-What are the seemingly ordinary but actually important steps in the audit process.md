@@ -1,7 +1,7 @@
 ---
 title: "017-审计过程中，有哪些看似普通但实际很重要的步骤"
 type: posts
-categories: [投行]
+categories: [投技]
 tags: [IPO审计手札]
 date: 2023-08-01
 ---

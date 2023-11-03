@@ -1,7 +1,7 @@
 ---
 title: "049-在建工程审计的魔鬼细节"
 type: posts
-categories: [投行]
+categories: [投技]
 tags: [IPO审计手札]
 date: 2023-08-01
 ---

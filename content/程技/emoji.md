@@ -1,7 +1,7 @@
 ---
 title: "emoji"
 type: posts
-categories: [编程]
+categories: [程技]
 tags: ["emoji"]
 date: 2023-08-01
 ---

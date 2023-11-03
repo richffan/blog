@@ -2,7 +2,7 @@
 title: '每天一个linux命令（33）: free'
 date: 2017-01-02 21:43:26
 type: posts
-categories: [编程]
+categories: [程技]
 tags: ["linux命令"]
 ---
 　　free命令可以显示Linux系统中空闲的、已用的物理内存及swap内存,及被内核使用的buffer。在Linux系统监控的工具中，free命令是最经常使用的命令之一。

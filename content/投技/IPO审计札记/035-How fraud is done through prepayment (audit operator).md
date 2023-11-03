@@ -1,7 +1,7 @@
 ---
 title: "035-通过预付账款舞弊是如何做到的（审计话事人）"
 type: posts
-categories: [投行]
+categories: [投技]
 tags: [IPO审计手札]
 date: 2023-08-01
 ---

@@ -1,7 +1,7 @@
 ---
 title: "第四章 函数式编程"
 type: posts
-categories: [编程]
+categories: [程技]
 tags: ["python"]
 date: 2023-09-25
 ---

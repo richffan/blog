@@ -1,7 +1,7 @@
 ---
 title: Golang入门笔记-CH07-结构体和方法
 type: posts
-categories: [编程]
+categories: [程技]
 tags: [Golang]
 date: 2022-10-01
 ---

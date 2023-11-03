@@ -1,7 +1,7 @@
 ---
 title: "投资项目竣工决算审计应关注的8大重点"
 type: posts
-categories: [审计]
+categories: [审技]
 tags: ["专项"]
 date: 2023-08-01
 ---

@@ -2,7 +2,7 @@
 title: '每天一个linux命令（7）: mv'
 date: 2016-12-07 15:55:20
 type: posts
-categories: [编程]
+categories: [程技]
 tags: ["linux命令"]
 ---
 　　mv命令是move的缩写，可以用来移动文件或者将文件改名（move (rename) files），是Linux系统下常用的命令，经常用来备份文件或者目录

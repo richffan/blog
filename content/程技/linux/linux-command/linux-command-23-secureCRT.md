@@ -2,7 +2,7 @@
 title: '每天一个linux命令（23）: 用SecureCRT来上传和下载文件'
 date: 2016-12-23 09:48:15
 type: posts
-categories: [编程]
+categories: [程技]
 tags: ["linux命令"]
 ---
 　　用SSH管理linux服务器时经常需要远程与本地之间交互文件.而直接用SecureCRT自带的上传下载功能无疑是最方便的，SecureCRT下的文件传输协议有ASCII、Xmodem、Zmodem。

@@ -2,7 +2,7 @@
 title: '每天一个linux命令（20）: find命令之exec'
 date: 2016-12-20 10:47:32
 type: posts
-categories: [编程]
+categories: [程技]
 tags: ["linux命令"]
 ---
 　　find是我们很常用的一个Linux命令，但是我们一般查找出来的并不仅仅是看看而已，还会有进一步的操作，这个时候exec的作用就显现出来了

@@ -1,7 +1,7 @@
 ---
 title: "034-预付款项（预付账款）审计要点"
 type: posts
-categories: [投行]
+categories: [投技]
 tags: [IPO审计手札]
 date: 2023-08-01
 ---

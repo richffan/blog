@@ -1,7 +1,7 @@
 ---
 title: "097-如何使用间接法（公式法）编制现金流量表"
 type: posts
-categories: [投行]
+categories: [投技]
 tags: [IPO审计手札]
 date: 2023-08-01
 ---

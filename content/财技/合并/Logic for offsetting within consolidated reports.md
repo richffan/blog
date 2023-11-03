@@ -1,7 +1,7 @@
 ---
 title: "合并报表内部抵消的逻辑"
 type: posts
-categories: [审计]
+categories: [审技]
 tags: [合并]
 date: 2023-08-01
 ---

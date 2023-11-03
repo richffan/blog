@@ -2,7 +2,7 @@
 title: '每天一个linux命令（51）: wc'
 date: 2017-01-19 09:33:59
 type: posts
-categories: [编程]
+categories: [程技]
 tags: ["linux命令"]
 ---
 　　Linux系统中的wc(Word Count)命令的功能为统计指定文件中的字节数、字数、行数，并将统计结果显示输出。

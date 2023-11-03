@@ -1,7 +1,7 @@
 ---
 title: "长期股权投资转换本质"
 type: posts
-categories: [审计]
+categories: [审技]
 tags: [合并]
 date: 2023-08-01
 ---

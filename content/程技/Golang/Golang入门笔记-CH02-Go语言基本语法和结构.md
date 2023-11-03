@@ -1,7 +1,7 @@
 ---
 title: Golang入门笔记-CH02-Go语言基本语法和结构
 type: posts
-categories: [编程]
+categories: [程技]
 tags: [Golang]
 date: 2022-10-01
 ---

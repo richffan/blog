@@ -1,7 +1,7 @@
 ---
 title: "022-如何开好一张审计底稿"
 type: posts
-categories: [投行]
+categories: [投技]
 tags: [IPO审计手札]
 date: 2023-08-01
 ---

@@ -2,7 +2,7 @@
 title: d文字
 date: 2023-05-15
 type: posts
-categories: [编程]
+categories: [程技]
 tags: [VBA]
 ---
 

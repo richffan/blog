@@ -1,7 +1,7 @@
 ---
 title: "查询连续登陆3天的用户id和登陆天数"
 type: posts
-categories: [编程]
+categories: [程技]
 tags: ["SQL"]
 date: 2023-08-01
 ---

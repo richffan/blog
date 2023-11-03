@@ -1,7 +1,7 @@
 ---
 title: Linux
 type: posts
-categories: [系统]
+categories: [程技]
 tags:
     - linux
 date: 2020-01-01 10:00:00
