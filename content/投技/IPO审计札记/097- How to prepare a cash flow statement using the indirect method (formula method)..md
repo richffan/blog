@@ -49,7 +49,7 @@ date: 2023-08-01
 
 选项怎么来的：企业会计准则规定现金流量表就长这样
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/097-如何使用间接法（公式法）编制现金流量表_1.webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/097-如何使用间接法（公式法）编制现金流量表_1.webp) 
 
 看看 B，若是如下分录，那选 B借：银行存款 100W
 
@@ -87,7 +87,7 @@ date: 2023-08-01
 
 正儿八经谈论公式法原理的话，得祭出知乎上古神图，私以为没必要，**编制现金流的核心是对分类的理解，是对业务与科目的理解**
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/097-如何使用间接法（公式法）编制现金流量表_2.webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/097-如何使用间接法（公式法）编制现金流量表_2.webp) 
 
 倏地，感觉没啥说的，现金流等式也没啥好扯的，三年级的数学问题。还有困惑的，不妨后台滴滴
 
