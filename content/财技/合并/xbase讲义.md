@@ -1,5 +1,5 @@
 ---
-title: "xbase讲义"
+title: xbase讲义
 type: posts
 categories: [审技]
 tags: [合并]
@@ -25,7 +25,7 @@ date: 2023-08-01
 
 下面我们来讲一下xbase的逻辑。
 
-![](https://img.richfan.site/obsidian/xbase讲义_1.webp) 
+![](https://img.richfan.site/finance/accounting/xbase讲义/xbase讲义_1.webp) 
 
 上图是天健的试算平衡表，红色方框框住的xbase、分析分录、分析分录（综合分析）、补充分录、现金流量表、补充资料，这几个表，是与现金流相关的。
 
@@ -69,11 +69,11 @@ date: 2023-08-01
 
 举个例子，其他应收款原值的借方发生额400万，贷方发生额300万，如果不填xbase的话，它就会直接把100万变动额倒轧到经营活动支付的其他。我们想让它按发生额列示，就要在xbase的其他应收款的“收回其他大额经营性款项”填一个300万，如下图。
 
-![](https://img.richfan.site/obsidian/xbase讲义_2.webp) 
+![](https://img.richfan.site/finance/accounting/xbase讲义/xbase讲义_2.webp) 
 
 填完之后，xbase的公式就会自动把这300万链接到分析分录中，然后倒挤数经营活动支付的其他就变成的400万，这样的结果，就跟我们前面讲的模板法一样了。如下图
 
-![](https://img.richfan.site/obsidian/xbase讲义_3.webp) 
+![](https://img.richfan.site/finance/accounting/xbase讲义/xbase讲义_3.webp) 
 
 **坏账变动额**
 
@@ -107,11 +107,11 @@ Xbase把固定资产变动额，分为原值变动额，累计折旧变动额，
 
 假设累计折旧借方发生额为60万，贷方发生额为500万，其中300万对应成本，200万对应费用，xbase的填法如下图。
 
-![](https://img.richfan.site/obsidian/xbase讲义_4.webp) 
+![](https://img.richfan.site/finance/accounting/xbase讲义/xbase讲义_4.webp) 
 
 填好之后，分析分录如下图。
 
-![](https://img.richfan.site/obsidian/xbase讲义_5.webp) 
+![](https://img.richfan.site/finance/accounting/xbase讲义/xbase讲义_5.webp) 
 
 我们可以看到，分析分录是把计入成本的累计折旧用负数放到“购买商品、接受劳务支付的现金”，把计入费用的折旧用负数放到“支付其他与经营活动有关的现金”。因为后面的主营业务成本，和销售费用、管理费用也是计入这两个现金流项目，这里的负数，会和后面的正数相抵消。也就是说，折旧和它对应的成本费用是放到同一个项目的，正负号相反，只要能勾稽上，它们就能自动抵消，折旧本身就不涉及现金流，抵消掉之后，也不影响现金流，所以这么操作就是对的。
 
