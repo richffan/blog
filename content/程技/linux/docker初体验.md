@@ -2,7 +2,7 @@
 title: docker初体验
 date: 2017-05-19 16:32:23
 type: posts
-categories: ['编程']
+categories: [程技]
 tags: ['docker']
 ---
 ### 安装

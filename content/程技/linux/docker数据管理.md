@@ -2,7 +2,7 @@
 title: docker数据管理
 date: 2017-05-23 21:43:06
 type: posts
-categories: ['编程']
+categories: [程技]
 tags: ['docker']
 ---
 ### 数据卷

@@ -2,7 +2,7 @@
 title: 搭建Maven私服-Nexus
 date: 2017-09-06 23:01:31
 type: posts
-categories: ['编程']
+categories: [程技]
 tags: ['maven','nexus','java']
 ---
 > Maven 私服，可以代理远程仓库和部署自己或第三方构件。本文介绍使用最广泛搭建 Maven 私服的工具： Sonatype Nexus。

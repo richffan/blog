@@ -2,7 +2,7 @@
 title: CentOS修改DNS/GW/IP
 date: 2017-05-23 09:53:52
 type: posts
-categories: ['编程']
+categories: [程技]
 tags: ['运维','centos']
 ---
 ### 1.修改DNS

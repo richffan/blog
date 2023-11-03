@@ -2,7 +2,7 @@
 title: Dockerfile指令详解
 date: 2017-05-22 19:11:42
 type: posts
-categories: ['编程']
+categories: [程技]
 tags: ['docker']
 ---
 `Dockerfile` 是一个文本文件，其内包含了一条条的指令(Instruction)，每一条指令构建一层，因此每一条指令的内容，就是描述该层应当如何构建。

@@ -2,7 +2,7 @@
 title: Vim命令速查表
 date: 2017-03-06 11:23:36
 type: posts
-categories: ['编程']
+categories: [程技]
 tags: ['vim']
 ---
 去年上半年开始全面使用linux进行开发和娱乐了，现在已经回不去windows了。

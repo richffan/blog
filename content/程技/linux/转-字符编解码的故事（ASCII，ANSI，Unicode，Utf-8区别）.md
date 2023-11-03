@@ -2,7 +2,7 @@
 title: '[转]字符编解码的故事（ASCII，ANSI，Unicode，Utf-8区别）'
 date: 2017-09-25 19:15:00
 type: posts
-categories: ['编程']
+categories: [程技]
 tags: ['encoding']
 ---
 很久很久以前，有一群人，他们决定用8个可以开合的晶体管来组合成不同的状态，以表示世界上的万物。他们认为8个开关状态作为原子单位很好，于是他们把这称为"字节"。

@@ -2,7 +2,7 @@
 title: sudo命令免密码设置
 date: 2017-09-11 09:30:55
 type: posts
-categories: ['编程']
+categories: [程技]
 tags: ['linux']
 ---
 > 如果某台linux只有自己在使用，比如个人系统，每次调用 `sudo` 时都需要输入密码，长期下来着实厌烦，因此本文介绍如何配置 `sudo` 命令，使其在运行时不需要输入密码。

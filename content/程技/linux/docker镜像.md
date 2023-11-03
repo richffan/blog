@@ -2,7 +2,7 @@
 title: docker镜像
 date: 2017-05-19 16:47:33
 type: posts
-categories: ['编程']
+categories: [程技]
 tags: ['docker']
 ---
 ### What

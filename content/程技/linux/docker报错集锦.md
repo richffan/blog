@@ -2,7 +2,7 @@
 title: docker报错集锦
 date: 2017-09-25 10:03:50
 type: posts
-categories: ['编程']
+categories: [程技]
 tags: ['docker']
 ---
 ### docker创建容器

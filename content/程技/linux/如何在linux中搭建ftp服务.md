@@ -2,7 +2,7 @@
 title: 如何在linux中搭建ftp服务
 date: 2017-03-06 08:47:48
 type: posts
-categories: ['编程']
+categories: [程技]
 tags: ['ftp']
 ---
 ### 什么是 FTP

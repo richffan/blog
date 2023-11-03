@@ -1,8 +1,7 @@
 ---
 title: duckdb从入门到精通：安装篇
 date: 2023-05-05 14:19:09
-categories:
-  - 审计
+categories: [审技]
 tags: [IT审计]
 ---
 

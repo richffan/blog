@@ -2,7 +2,7 @@
 title: linux下修改按键ESC<=>CAPSLOCK和Control=>ALT_R
 date: 2017-10-20 17:38:49
 type: posts
-categories: ['编程']
+categories: [程技]
 tags: ['keybord','vim','emacs','linux']
 ---
 使用 `vim` 过程中发现 `esc` 和 `ctrl` 按键很难按，小拇指没有那么长啊～～，而 `caps_lock` 和 `alt_r`(右alt) 很少用。
