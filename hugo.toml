@@ -734,7 +734,7 @@ theme = "fixIt"
     enable = false
     # Google Analytics
     [params.analytics.google]
-      id = ""
+      id = "G-0X8GC78B6X"
       # 是否匿名化用户 IP
       anonymizeIP = true
     # Fathom Analytics
