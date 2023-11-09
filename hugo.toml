@@ -11,26 +11,26 @@ hasCJKLanguage = true
 theme = "fixIt"
 
 [menu]
-  # [[menu.main]]
-  #   identifier = "posts"
-  #   name = "文章"
-  #   url = "/posts/"
-  #   weight = 1
-  #   [menu.main.params]
-  #     icon = "fa-solid fa-archive fa-fw"
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 1
+    [menu.main.params]
+      icon = "fa-solid fa-archive fa-fw"
   [[menu.main]]
     identifier = "categories"
     name = "分类"
     url = "/categories/"
     title = ""
-    weight = 1
+    weight = 2
     [menu.main.params]
       icon = "fa-solid fa-folder-open fa-fw"
   [[menu.main]]
     identifier = "tags"
     name = "标签"
     url = "/tags/"
-    weight = 2
+    weight = 3
     [menu.main.params]
       icon = "fa-solid fa-tags fa-fw"
   [[menu.main]]
@@ -40,7 +40,7 @@ theme = "fixIt"
     name = "友链"
     url = "/friends/"
     title = ""
-    weight = 3
+    weight = 4
     [menu.main.params]
       icon = "fa-solid fa-users fa-fw"
   [[menu.main]]
@@ -50,7 +50,7 @@ theme = "fixIt"
     name = "关于"
     url = "/about/"
     title = ""
-    weight = 4
+    weight = 5
     [menu.main.params]
       icon = "fa-solid fa-info-circle fa-fw"
 
