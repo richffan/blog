@@ -290,7 +290,7 @@
         height: auto;
       }
 
-      &[loading='lazy'][srcset]:not([data-lazyloaded]) {
+      &:is([loading='lazy']):not([data-lazyloaded]) {
         &:not(.suffix-invalid__small) {
           width: var(--width-small, var(--width));
           aspect-ratio: var(--aspect-ratio-small, var(--aspect-ratio));
@@ -338,6 +338,10 @@
         display: block;
         margin: 0 auto;
         overflow: hidden;
+
+        &:not([width]) {
+          width: 100%;
+        }
       }
     }
 

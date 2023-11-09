@@ -1,26 +1,15 @@
 {
   "name": "fixit-src",
-  "version": "0.2.18-lts.4",
+  "version": "0.2.18",
   "description": "FixIt theme source files",
   "private": true,
   "devDependencies": {
-    "@babel/cli": "7.23.0",
-    "@babel/core": "7.23.2",
-    "@babel/preset-env": "7.23.2",
-    "atomic-algolia": "0.3.19",
-    "babelify": "10.0.0",
-    "browserify": "17.0.0",
-    "core-js": "3.33.2",
-    "segmentit": "2.0.3"
+    "atomic-algolia": "^0.3.19"
   },
   "scripts": {
-    "babel": "npx babel src/js/theme.js -o assets/js/theme.min.js -s",
-    "build": "npm run babel && hugo -v --source=docs --gc --minify",
-    "build:lunr.segmentit": "browserify src/lib/lunr.segmentit.js -o assets/lib/lunr/lunr.segmentit.js -t babelify --presets @babel/preset-env --presets minify",
+    "build": "hugo -v --source=docs --gc --minify",
     "server": "hugo server --source=docs -D --disableFastRender --navigateToChanged --ignoreCache --bind 0.0.0.0",
     "server:production": "npm run server -- -e production",
-    "start": "npm run babel && npm run server",
-    "start:production": "npm run babel && npm run server:production",
     "algolia": "atomic-algolia",
     "update:docs": "git submodule update --remote --merge && git add docs && git commit -m ':memo: Docs: update theme docs'",
     "version": "sed -i '' \"s/v$npm_package_version-RC/v$npm_package_version/g\" layouts/partials/init/index.html && git add .",
