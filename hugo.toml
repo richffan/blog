@@ -178,9 +178,9 @@ theme = "fixIt"
     #  是否显示网站内容总字数
     wordCount = true
     #  公网安备信息，仅在中国使用（支持 HTML 格式）
-    gov = "京公网安备 11010502049321号"
+    gov = '<a href="https://beian.mps.gov.cn/">京公网安备 11010502049321号</a>'
     #  ICP 备案信息，仅在中国使用（支持 HTML 格式）
-    icp = "京ICP备2022007001号-1"
+    icp = '<a href="https://beian.miit.gov.cn/shouye.html">京ICP备2022007001号-1</a>'
     # 许可协议信息（支持 HTML 格式）
     license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
     #  网站创立时间
