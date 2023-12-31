@@ -10,7 +10,21 @@
   {{- $source := $cdn.autocompleteJS | default "lib/autocomplete/autocomplete.min.js" -}}
   {{- dict "Source" $source "Fingerprint" $fingerprint "Defer" true | dict "Scratch" .Scratch "Data" | partial "scratch/script.html" -}}
   {{- $config = dict "maxResultLength" $search.maxResultLength "snippetLength" $search.snippetLength "highlightTag" $search.highlightTag "noResultsFound" (T "assets.noResultsFound") | dict "search" | merge $config -}}
-  {{- if eq $search.type "algolia" -}}
+  {{- if eq $search.type "lunr" -}}
+    {{- with .Site.Home.OutputFormats.Get "json" -}}
+      {{- $config = dict "type" "lunr" "lunrIndexURL" .RelPermalink | dict "search" | merge $config -}}
+    {{- end -}}
+    {{- $source := $cdn.lunrJS | default "lib/lunr/lunr.min.js" -}}
+    {{- dict "Source" $source "Fingerprint" $fingerprint "Defer" true | dict "Scratch" .Scratch "Data" | partial "scratch/script.html" -}}
+    {{- if T "assets.lunrLanguageLib" -}}
+      {{- $config = T "assets.lunrLanguageCode" | dict "lunrLanguageCode" | dict "search" | merge $config -}}
+      {{- with T "assets.lunrSegmentitLib" -}}
+        {{- $config = dict "lunrSegmentitURL" (resources.Get .).RelPermalink | dict "search" | merge $config -}}
+      {{- end -}}
+      {{- dict "Source" "lib/lunr/lunr.stemmer.support.js" "Minify" true "Fingerprint" $fingerprint "Defer" true | dict "Scratch" .Scratch "Data" | partial "scratch/script.html" -}}
+      {{- dict "Source" (T "assets.lunrLanguageLib") "Minify" true "Fingerprint" $fingerprint "Defer" true | dict "Scratch" .Scratch "Data" | partial "scratch/script.html" -}}
+    {{- end -}}
+  {{- else if eq $search.type "algolia" -}}
     {{- $source := $cdn.algoliasearchJS | default "lib/algoliasearch/algoliasearch-lite.umd.min.js" -}}
     {{- dict "Source" $source "Fingerprint" $fingerprint "Defer" true | dict "Scratch" .Scratch "Data" | partial "scratch/script.html" -}}
     {{- $config = dict "type" "algolia" "algoliaIndex" $search.algolia.index "algoliaAppID" $search.algolia.appID "algoliaSearchKey" $search.algolia.searchKey | dict "search" | merge $config -}}
@@ -81,7 +95,7 @@
 {{- $math := .Scratch.Get "math" -}}
 {{- if $math.enable -}}
   {{- $source := $cdn.katexCSS | default "lib/katex/katex.min.css" -}}
-  {{- dict "Source" $source "Fingerprint" $fingerprint | dict "Scratch" .Scratch "Data" | partial "scratch/style.html" -}}
+  {{- dict "Source" $source "Fingerprint" $fingerprint "Preload" true | dict "Scratch" .Scratch "Data" | partial "scratch/style.html" -}}
   {{- $source := $cdn.katexJS | default "lib/katex/katex.min.js" -}}
   {{- dict "Source" $source "Fingerprint" $fingerprint "Defer" true | dict "Scratch" .Scratch "Data" | partial "scratch/script.html" -}}
   {{- $source := $cdn.katexAutoRenderJS | default "lib/katex/auto-render.min.js" -}}
@@ -133,7 +147,7 @@
 {{- /* Mapbox GL */ -}}
 {{- if (.Scratch.Get "this").mapbox -}}
   {{- $source := $cdn.mapboxGLCSS | default "lib/mapbox-gl/mapbox-gl.css" -}}
-  {{- dict "Source" $source "Minify" true "Fingerprint" $fingerprint | dict "Scratch" .Scratch "Data" | partial "scratch/style.html" -}}
+  {{- dict "Source" $source "Minify" true "Fingerprint" $fingerprint "Preload" true | dict "Scratch" .Scratch "Data" | partial "scratch/style.html" -}}
   {{- $source = $cdn.mapboxGLJS | default "lib/mapbox-gl/mapbox-gl.js" -}}
   {{- dict "Source" $source "Fingerprint" $fingerprint "Defer" true | dict "Scratch" .Scratch "Data" | partial "scratch/script.html" -}}
   {{- dict "Source" "lib/mapbox-gl/mapbox-gl-language.js" "Minify" true "Fingerprint" $fingerprint "Defer" true | dict "Scratch" .Scratch "Data" | partial "scratch/script.html" -}}
@@ -144,7 +158,7 @@
 {{- if (.Scratch.Get "this").music -}}
   {{- /* APlayer */ -}}
   {{- $source := $cdn.aplayerCSS | default "lib/aplayer/APlayer.min.css" -}}
-  {{- dict "Source" $source "Fingerprint" $fingerprint | dict "Scratch" .Scratch "Data" | partial "scratch/style.html" -}}
+  {{- dict "Source" $source "Fingerprint" $fingerprint "Preload" true | dict "Scratch" .Scratch "Data" | partial "scratch/style.html" -}}
   {{- $options := dict "targetPath" "lib/aplayer/dark.min.css" "enableSourceMap" true -}}
   {{- dict "Source" "lib/aplayer/dark.scss" "ToCSS" $options "Fingerprint" $fingerprint | dict "Scratch" .Scratch "Data" | partial "scratch/style.html" -}}
   {{- $source := $cdn.aplayerJS | default "lib/aplayer/APlayer.min.js" -}}
@@ -276,18 +290,13 @@
 {{- $config | jsonify | printf "window.config=%s;" | dict "Content" | dict "Scratch" .Scratch "Data" | partial "scratch/script.html" -}}
 
 {{- /* Theme script */ -}}
-{{- $options := dict "targetPath" "js/theme.min.js" "minify" hugo.IsProduction -}}
-{{- if not hugo.IsProduction -}}
-  {{- $options = dict "sourceMap" "external" | merge $options -}}
-{{- end -}}
-{{- dict "Source" (resources.Get "js/theme.js") "Build" $options "Fingerprint" $fingerprint "Defer" true | dict "Scratch" .Scratch "Data" | partial "scratch/script.html" -}}
+{{- /* TODO migrate to js.build in hugo future version */ -}}
+{{- dict "Source" "js/theme.min.js" "Fingerprint" $fingerprint "Defer" true | dict "Scratch" .Scratch "Data" | partial "scratch/script.html" -}}
+{{- $_ := (resources.Get "js/theme.min.js.map").RelPermalink -}}
 
 {{- /* Custom script */ -}}
 {{- with ((resources.Get "js/custom.js") | default (resources.Get "js/_custom.js")) -}}
-  {{- $options := dict "targetPath" "js/custom.min.js" "minify" hugo.IsProduction -}}
-  {{- if not hugo.IsProduction -}}
-    {{- $options = dict "sourceMap" "inline" | merge $options -}}
-  {{- end -}}
+  {{- $options := dict "targetPath" "js/custom.min.js" "minify" true "sourceMap" "inline" -}}
   {{- dict "Source" . "Build" $options "Fingerprint" $fingerprint "Defer" true | dict "Scratch" $.Scratch "Data" | partial "scratch/script.html" -}}
 {{- end -}}
 
