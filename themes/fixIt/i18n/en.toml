@@ -18,6 +18,9 @@ noscript = "Theme FixIt works best with JavaScript enabled."
 # === baseof ===
 
 # === Taxonomy ===
+[archives]
+other = "Archives"
+
 [allSome]
 other = "All {{ .Some }}"
 
@@ -26,6 +29,12 @@ other = "Category"
 
 [categories]
 other = "Categories"
+
+[collection]
+other = "Collection"
+
+[collections]
+other = "Collections"
 
 [tag]
 other = "Tag"
@@ -45,6 +54,10 @@ recentlyUpdated = "Recently Updated"
 [section.totalWordCount]
 one = "Total one word"
 other = "Total {{ .Count }} words"
+
+[section.archiveCounter]
+one = "Only one article"
+other = "{{ .Count }} articles in total"
 # === Section ===
 
 # === Pagination ===
@@ -96,16 +109,18 @@ other = "Share on"
 
 # === posts/single.html ===
 [single]
-contents= "Contents"
-repost= "Repost"
-publishedOnDate= "published on {{ .Date }}"
-includedInCategories= "included in {{ .Categories }}"
+contents = "Contents"
+pin = "Pin to top"
+repost = "Repost"
+publishedOnDate = "published on {{ .Date }}"
 views = "views"
 comments = "comments"
 author = "Author"
 updatedOnDate = "Updated on {{ .Date }}"
 readMarkdown = "Read Markdown"
+viewSource = "View source"
 editThisPage = "Edit this page"
+reportIssue = "Report issue"
 back = "Back"
 home = "Home"
 readMore = "Read More"
@@ -114,6 +129,12 @@ encryptedAbstract = "This article has been encrypted, so its raw content is invi
 encryptedMessage = "Please enter the password"
 password = "Password"
 encryptyAgain = "Encrypt again"
+relatedContent = "Related Content"
+
+[single.includedIn]
+categories = "included in {{ .Categories }}"
+collections = "included in {{ .Collections }}"
+both = "included in {{ .Categories }} and {{ .Collections }}"
 
 [single.wordCount]
 one = "One word"

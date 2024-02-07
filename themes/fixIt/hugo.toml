@@ -4,19 +4,50 @@
 # =====================================================================================
 
 # -------------------------------------------------------------------------------------
+# Hugo Configuration
+# See: https://gohugo.io/getting-started/configuration/
+# -------------------------------------------------------------------------------------
+
+# website title
+title = ""
+# Hostname (and path) to the root
+baseURL = "http://localhost:1313"
+# theme list
+# theme = ["FixIt"] # enable in your site config file
+# determines default content language ["en", "zh-cn", "fr", "pl", ...]
+defaultContentLanguage = "en"
+# language code ["en", "zh-CN", "fr", "pl", ...]
+languageCode = "en"
+# language name ["English", "简体中文", "Français", "Polski", ...]
+languageName = "English"
+# whether to include Chinese/Japanese/Korean
+hasCJKLanguage = false
+# default amount of posts in each pages
+paginate = 12
+# copyright description used only for seo schema
+copyright = ""
+# whether to use robots.txt
+enableRobotsTXT = true
+# whether to use git commit log
+enableGitInfo = true
+# whether to use emoji code
+enableEmoji = true
+
+# -------------------------------------------------------------------------------------
 # Menu Configuration
 # See: https://fixit.lruihao.cn/documentation/basics/#menu-configuration
 # -------------------------------------------------------------------------------------
 
 [menu]
   [[menu.main]]
-    identifier = "posts"
+    identifier = "archives"
+    parent = ""
     # you can add extra information before the name (HTML format is supported), such as icons
     pre = ""
     # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
-    name = "Posts"
-    url = "/posts/"
+    name = "Archives"
+    url = "/archives/"
     # title will be shown when you hover on this menu link
     title = ""
     weight = 1
@@ -32,6 +63,7 @@
       type = ""
   [[menu.main]]
     identifier = "categories"
+    parent = ""
     pre = ""
     post = ""
     name = "Categories"
@@ -39,9 +71,10 @@
     title = ""
     weight = 2
     [menu.main.params]
-      icon = "fa-solid fa-th"
+      icon = "fa-solid fa-folder-tree"
   [[menu.main]]
     identifier = "tags"
+    parent = ""
     pre = ""
     post = ""
     name = "Tags"
@@ -52,25 +85,218 @@
       icon = "fa-solid fa-tags"
 
 # -------------------------------------------------------------------------------------
+# Related content Configuration
+# See: https://gohugo.io/content-management/related/
+# -------------------------------------------------------------------------------------
+
+[related]
+  includeNewer = false
+  threshold = 80
+  toLower = false
+[[related.indices]]
+  applyFilter = false
+  cardinalityThreshold = 0
+  name = 'keywords'
+  pattern = ''
+  toLower = false
+  type = 'basic'
+  weight = 100
+[[related.indices]]
+  applyFilter = false
+  cardinalityThreshold = 0
+  name = 'date'
+  pattern = ''
+  toLower = false
+  type = 'basic'
+  weight = 10
+[[related.indices]]
+  applyFilter = false
+  cardinalityThreshold = 0
+  name = 'tags'
+  pattern = ''
+  toLower = false
+  type = 'basic'
+  weight = 80
+[[related.indices]]
+  applyFilter = false
+  name = 'fragmentrefs'
+  type = 'fragments'
+  weight = 80
+
+# -------------------------------------------------------------------------------------
+# Modules Configuration
+# See: https://gohugo.io/hugo-modules/configuration/#module-config-imports
+# -------------------------------------------------------------------------------------
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.112.0"
+
+# -------------------------------------------------------------------------------------
+# Markup related configuration in Hugo
+# See: https://gohugo.io/getting-started/configuration-markup/
+# -------------------------------------------------------------------------------------
+
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    ########## necessary configurations ##########
+    # https://github.com/hugo-fixit/FixIt/issues/43
+    codeFences = true
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+    ########## necessary configurations ##########
+    guessSyntax = true
+  # Goldmark is from Hugo 0.60 the default library used for Markdown
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.renderer]
+      # whether to use HTML tags directly in the document
+      unsafe = true
+  # Table Of Contents settings
+  [markup.tableOfContents]
+    ordered = false
+    startLevel = 2
+    endLevel = 6
+
+# -------------------------------------------------------------------------------------
+# Sitemap Configuration
+# See: https://gohugo.io/templates/sitemap-template/#configuration
+# -------------------------------------------------------------------------------------
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# -------------------------------------------------------------------------------------
+# Permalinks Configuration
+# See: https://gohugo.io/content-management/urls/#permalinks
+# -------------------------------------------------------------------------------------
+
+[Permalinks]
+  # posts = ":year/:month/:filename"
+  posts = "posts/:slugorfilename"
+
+# -------------------------------------------------------------------------------------
+# Privacy Configuration
+# See: https://gohugo.io/about/hugo-and-gdpr/
+# -------------------------------------------------------------------------------------
+
+[privacy]
+  [privacy.twitter]
+    enableDNT = true
+  [privacy.youtube]
+    privacyEnhanced = true
+
+# -------------------------------------------------------------------------------------
+# Media Types
+# See: https://gohugo.io/templates/output-formats/#media-types
+# -------------------------------------------------------------------------------------
+
+[mediaTypes]
+  # Options to make output .md files
+  [mediaTypes."text/markdown"]
+    suffixes = ["md"]
+  # Options to make output .txt files
+  [mediaTypes."text/plain"]
+    suffixes = ["txt"]
+
+# -------------------------------------------------------------------------------------
+# Output Format Definitions
+# See: https://gohugo.io/templates/output-formats/#output-format-definitions
+# -------------------------------------------------------------------------------------
+
+[outputFormats]
+  # Options to make output .md files
+  [outputFormats.MarkDown]
+    mediaType = "text/markdown"
+    isPlainText = true
+    isHTML = false
+  # FixIt 0.3.0 | NEW Options to make output /archives/index.html file
+  [outputFormats.archives]
+    path = "archives"
+    baseName = "index"
+    mediaType = "text/html"
+    isPlainText = false
+    isHTML = true
+    permalinkable = true
+  # FixIt 0.3.0 | NEW Options to make output /offline/index.html file
+  [outputFormats.offline]
+    path = "offline"
+    baseName = "index"
+    mediaType = "text/html"
+    isPlainText = false
+    isHTML = true
+    permalinkable = true
+  # FixIt 0.3.0 | NEW Options to make output readme.md file
+  [outputFormats.README]
+    baseName = "readme"
+    mediaType = "text/markdown"
+    isPlainText = true
+    isHTML = false
+  # FixIt 0.3.0 | CHANGED Options to make output baidu_urls.txt file
+  [outputFormats.baidu_urls]
+    baseName = "baidu_urls"
+    mediaType = "text/plain"
+    isPlainText = true
+    isHTML = false
+
+# -------------------------------------------------------------------------------------
+# Customizing Output Formats
+# See: https://gohugo.io/templates/output-formats/#customizing-output-formats
+# -------------------------------------------------------------------------------------
+
+# Options to make hugo output files, the optional values are below:
+# home: ["HTML", "RSS", "JSON", "archives", "offline", "README", "baidu_urls"]
+# page: ["HTML", "MarkDown"]
+# section: ["HTML", "RSS"]
+# taxonomy: ["HTML", "RSS"]
+# term: ["HTML", "RSS"]
+[outputs]
+  home = ["HTML", "RSS", "JSON", "archives"]
+  page = ["HTML", "MarkDown"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML"]
+  term = ["HTML", "RSS"]
+
+# -------------------------------------------------------------------------------------
+# Taxonomies Configuration
+# See: https://gohugo.io/content-management/taxonomies/#configure-taxonomies
+# -------------------------------------------------------------------------------------
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  collection = "collections"
+
+# -------------------------------------------------------------------------------------
 # Theme Core Configuration
 # See: https://fixit.lruihao.cn/documentation/basics/#theme-configuration
 # -------------------------------------------------------------------------------------
 
 [params]
   # FixIt 0.2.15 | CHANGED FixIt theme version
-  version = "0.2.X" # e.g. "0.2.X", "0.2.15", "v0.2.15" etc.
+  version = "0.3.X" # e.g. "0.2.X", "0.2.15", "v0.2.15" etc.
   # site description
   description = ""
   # site keywords
-  keywords = ["Hugo", "FixIt"]
+  keywords = []
   # site default theme ["light", "dark", "auto"]
   defaultTheme = "auto"
-  # public git repo url only then enableGitInfo is true
-  gitRepo = ""
-  # FixIt 0.1.1 | NEW which hash function used for SRI, when empty, no SRI is used
+  # which hash function used for SRI, when empty, no SRI is used
   # ["sha256", "sha384", "sha512", "md5"]
   fingerprint = ""
-  # FixIt 0.2.0 | NEW date format
+  # NEW date format
   dateFormat = "2006-01-02"
   # website images for Open Graph and Twitter Cards
   images = []
@@ -78,11 +304,39 @@
   enablePWA = false
   # FixIt 0.2.14 | NEW whether to add external Icon for external links automatically
   externalIcon = false
+  # FixIt 0.3.0 | NEW whether to reverse the order of the navigation menu
+  navigationReverse = false
+  # FixIt 0.3.0 | NEW whether to add site title to the title of every page
+  # remember to set up your site title in `hugo.toml` (e.g. title = "title")
+  withSiteTitle = true
+  # FixIt 0.3.0 | NEW title delimiter when the site title is be added to the title of every page
+  titleDelimiter = "-"
+  # FixIt 0.3.0 | NEW whether to add site subtitle to the title of index page
+  # remember to set up your site subtitle by `params.header.subtitle.name`
+  indexWithSubtitle = false
   # FixIt 0.2.14 | NEW FixIt will, by default, inject a theme meta tag in the HTML head on the home page only.
   # You can turn it off, but we would really appreciate if you don’t, as this is a good way to watch FixIt's popularity on the rise.
   disableThemeInject = false
 
-  # FixIt 0.2.0 | NEW App icon config
+  # Author Configuration
+  [params.author]
+    name = ""
+    email = ""
+    link = ""
+    avatar = ""
+
+  # FixIt 0.3.0 | NEW public Git repository information only then enableGitInfo is true
+  [params.gitInfo]
+    # e.g. "https://github.com/hugo-fixit/docs"
+    repo = ""
+    branch = "main"
+    # the content directory path relative to the root of the repository
+    dir = "content"
+    # the issue template for reporting issue of the posts
+    # available template params: {title} {URL} {sourceURL}
+    issueTpl = "title=[BUG]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0A|URL|{URL}|%0A|Filename|{sourceURL}|"
+
+  # App icon config
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
     title = "FixIt"
@@ -99,7 +353,7 @@
       light = "#f8f8f8"
       dark = "#252627"
 
-  # FixIt 0.2.0 | NEW Search config
+  # Search config
   [params.search]
     enable = false
     # type of search engine ["algolia", "fuse"]
@@ -108,13 +362,13 @@
     contentLength = 4000
     # placeholder of the search bar
     placeholder = ""
-    # FixIt 0.2.1 | NEW max number of results length
+    # max number of results length
     maxResultLength = 10
-    # FixIt 0.2.3 | NEW snippet length of the result
+    # snippet length of the result
     snippetLength = 30
-    # FixIt 0.2.1 | NEW HTML tag name of the highlight part in results
+    # HTML tag name of the highlight part in results
     highlightTag = "em"
-    # FixIt 0.2.4 | NEW whether to use the absolute URL based on the baseURL in search index
+    # whether to use the absolute URL based on the baseURL in search index
     absoluteURL = false
     [params.search.algolia]
       index = ""
@@ -138,17 +392,17 @@
     desktopMode = "sticky"
     # FixIt 0.2.13 | CHANGED mobile header mode ["sticky", "normal", "auto"]
     mobileMode = "auto"
-    # FixIt 0.2.0 | NEW Header title config
+    # Header title config
     [params.header.title]
       # URL of the LOGO
-      logo = "/fixit.min.svg"
+      logo = ""
       # title name
-      name = "My Hugo FixIt Site"
+      name = ""
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
       post = ""
-      # FixIt 0.2.5 | NEW whether to use typeit animation for title name
+      # whether to use typeit animation for title name
       typeit = false
     # FixIt 0.2.12 | NEW Header subtitle config
     [params.header.subtitle]
@@ -169,22 +423,23 @@
     # FixIt 0.2.17 | CHANGED Custom content (HTML format is supported)
     # For advanced use, see parameter `params.customFilePath.footer`
     custom = ""
-    # FixIt 0.2.0 | NEW whether to show Hugo and theme info
-    hugo = true
-    # FixIt 0.2.0 | NEW whether to show copyright info
+    # whether to show copyright info
     copyright = true
-    # FixIt 0.2.0 | NEW whether to show the author
+    # whether to show the author
     author = true
     # Site creation year
     since = ""
-    # FixIt 0.2.14 | NEW whether to show total word count of site content
-    wordCount = true
     # FixIt 0.2.12 | NEW Public network security only in China (HTML format is supported)
     gov = ""
     # ICP info only in China (HTML format is supported)
     icp = ""
     # license info (HTML format is supported)
     license = ""
+    # FixIt 0.3.0 | NEW whether to show Hugo and theme info
+    [params.footer.powered]
+      enable = true
+      hugoLogo = true
+      themeLogo = true
     # FixIt 0.2.17 | CHANGED Site creation time
     [params.footer.siteTime]
       enable = false
@@ -200,22 +455,30 @@
       visitor = 0
       beian = 0
 
-  # FixIt 0.2.0 | NEW Section (all posts) page config
+  # FixIt 0.3.0 | NEW Archives page config (all pages of posts type)
+  [params.archives]
+    # special amount of posts in archives page
+    paginate = 20
+    # date format (month and day)
+    dateFormat = "01-02"
+
+  # Section page config (all pages in section)
   [params.section]
-    # special amount of posts in each section page
+    # special amount of pages in each section page
     paginate = 20
     # date format (month and day)
     dateFormat = "01-02"
     # amount of RSS pages
     rss = 10
-    # FixIt 0.2.13 | NEW recently updated posts settings
+    # FixIt 0.2.13 | NEW recently updated pages config
+    # TODO refactor to support archives, section, taxonomy and term
     [params.section.recentlyUpdated]
       enable = false
       rss = false
       days = 30
       maxCount = 10
 
-  # FixIt 0.2.0 | NEW List (category or tag) page config
+  # List (category or tag) page config
   [params.list]
     # special amount of posts in each list page
     paginate = 20
@@ -234,7 +497,7 @@
 
   # Home page config
   [params.home]
-    # FixIt 0.2.0 | NEW amount of RSS pages
+    # amount of RSS pages
     rss = 10
     # Home page profile
     [params.home.profile]
@@ -245,7 +508,7 @@
       avatarURL = ""
       # FixIt 0.2.17 | NEW identifier of avatar menu link
       avatarMenu = ""
-      # FixIt 0.2.7 | CHANGED title shown in home page (HTML format is supported)
+      # title shown in home page (HTML format is supported)
       title = ""
       # subtitle shown in home page
       subtitle = ""
@@ -253,7 +516,7 @@
       typeit = true
       # whether to show social links
       social = true
-      # FixIt 0.2.0 | NEW disclaimer (HTML format is supported)
+      # disclaimer (HTML format is supported)
       disclaimer = ""
     # Home page posts
     [params.home.posts]
@@ -351,30 +614,40 @@
     Email = ""
     RSS = true
 
-  # FixIt 0.2.0 | CHANGED Page config
+  # Page config
   [params.page]
     # FixIt 0.2.18 | NEW whether to enable the author's avatar of the post
     authorAvatar = true
-    # FixIt 0.2.0 | NEW whether to hide a page from home page
+    # whether to hide a page from home page
     hiddenFromHomePage = false
-    # FixIt 0.2.0 | NEW whether to hide a page from search results
+    # whether to hide a page from search results
     hiddenFromSearch = false
-    # FixIt 0.2.0 | NEW whether to enable twemoji
+    # FixIt 0.3.0 | NEW whether to hide a page from RSS feed
+    hiddenFromRss = false
+    # FixIt 0.3.0 | NEW whether to hide a page from related posts
+    hiddenFromRelated = false
+    # whether to enable twemoji
     twemoji = false
     # whether to enable lightgallery
     # FixIt 0.2.18 | CHANGED if set to "force", images in the content will be forced to shown as the gallery.
     lightgallery = false
-    # FixIt 0.2.0 | NEW whether to enable the ruby extended syntax
+    # whether to enable the ruby extended syntax
     ruby = true
-    # FixIt 0.2.0 | NEW whether to enable the fraction extended syntax
+    # whether to enable the fraction extended syntax
     fraction = true
-    # FixIt 0.2.0 | NEW whether to enable the fontawesome extended syntax
+    # whether to enable the fontawesome extended syntax
     fontawesome = true
     # license info (HTML format is supported)
-    license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
-    # whether to show link to Raw Markdown content of the content
+    license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
+    # whether to show link to Raw Markdown content of the post
     linkToMarkdown = true
-    # FixIt 0.2.4 | NEW whether to show the full text content in RSS
+    # FixIt 0.3.0 | NEW whether to show link to view source code of the post
+    linkToSource = true
+    # FixIt 0.3.0 | NEW whether to show link to edit the post
+    linkToEdit = true
+    # FixIt 0.3.0 | NEW whether to show link to report issue for the post
+    linkToReport = true
+    # whether to show the full text content in RSS
     rssFullText = false
     # FixIt 0.2.13 | NEW Page style ["narrow", "normal", "wide", ...]
     pageStyle = "normal"
@@ -389,16 +662,20 @@
     endFlag = ""
     # FixIt 0.2.18 | NEW whether to enable instant.page
     instantPage = false
+    # FixIt 0.3.0 | NEW whether to enable collection list at the sidebar
+    collectionList = false
+    # FixIt 0.3.0 | NEW whether to enable collection navigation at the end of the post
+    collectionNavigation = false
 
     # FixIt 0.2.15 | NEW Repost config
     [params.page.repost]
       enable = false
       url = ""
-    # FixIt 0.2.0 | NEW Table of the contents config
+    # Table of the contents config
     [params.page.toc]
       # whether to enable the table of the contents
       enable = true
-      # FixIt 0.2.9 | NEW whether to keep the static table of the contents in front of the post
+      # whether to keep the static table of the contents in front of the post
       keepStatic = false
       # whether to make the table of the contents in the sidebar automatically collapsed
       auto = true
@@ -413,6 +690,19 @@
       warning = 180
       # If the article expires, close the comment or not
       closeComment = false
+    # FixIt 0.3.0 | NEW page heading config
+    [params.page.heading]
+      # used with `markup.tableOfContents.ordered` parameter
+      [params.page.heading.number]
+        # whether to enable auto heading numbering
+        enable = false
+        [params.page.heading.number.format]
+          h1 = "{title}"
+          h2 = "{h2} {title}"
+          h3 = "{h2}.{h3} {title}"
+          h4 = "{h2}.{h3}.{h4} {title}"
+          h5 = "{h2}.{h3}.{h4}.{h5} {title}"
+          h6 = "{h2}.{h3}.{h4}.{h5}.{h6} {title}"
     # FixIt 0.2.16 | CHANGED KaTeX mathematical formulas (https://katex.org)
     [params.page.math]
       enable = true
@@ -426,7 +716,7 @@
       copyTex = true
       # KaTeX extension mhchem
       mhchem = true
-    # FixIt 0.2.0 | NEW Code config
+    # Code config
     [params.page.code]
       # whether to show the copy button of the code block
       copy = true
@@ -434,14 +724,7 @@
       edit = true
       # the maximum number of lines of displayed code by default
       maxShownLines = 10
-    # FixIt 0.2.14 | NEW Post edit
-    [params.page.edit]
-      enable = false
-      # FixIt 0.2.15 | CHANGED Link for fork & edit
-      # url = "/edit/branch-name/subdirectory-name" # base on `params.gitRepo`
-      # url = "https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name" # full url
-      url = ""
-    # FixIt 0.2.0 | NEW Mapbox GL JS config (https://docs.mapbox.com/mapbox-gl-js)
+    # Mapbox GL JS config (https://docs.mapbox.com/mapbox-gl-js)
     [params.page.mapbox]
       # access token of Mapbox GL JS
       accessToken = ""
@@ -457,6 +740,15 @@
       scale = true
       # whether to add FullscreenControl
       fullscreen = true
+    # FixIt 0.3.0 | NEW [Experimental] cache remote images locally, see: https://github.com/hugo-fixit/FixIt/pull/362
+    [params.page.cacheRemoteImages]
+      enable = false
+      # replace remote image url with local image url (place in public/images/remote/)
+      replace = false
+    # FixIt 0.3.0 | NEW Related content config (https://gohugo.io/content-management/related/)
+    [params.page.related]
+      enable = false
+      count = 5
     # FixIt 0.2.17 | NEW Donate (Sponsor) settings
     [params.page.reward]
       enable = false
@@ -471,7 +763,7 @@
         # alipay = "/images/alipay.png"
         # paypal = "/images/paypal.png"
         # bitcoin = "/images/bitcoin.png"
-    # FixIt 0.2.0 | CHANGED social share links in post page
+    # social share links in post page
     [params.page.share]
       enable = true
       Twitter = true
@@ -525,12 +817,12 @@
         imgUpload = true
         preview = true
         versionCheck = true
-      # FixIt 0.1.1 | NEW Disqus comment config (https://disqus.com)
+      # Disqus comment config (https://disqus.com)
       [params.page.comment.disqus]
         enable = false
         # Disqus shortname to use Disqus in posts
         shortname = ""
-      # FixIt 0.1.1 | NEW Gitalk comment config (https://github.com/gitalk/gitalk)
+      # Gitalk comment config (https://github.com/gitalk/gitalk)
       [params.page.comment.gitalk]
         enable = false
         owner = ""
@@ -553,7 +845,7 @@
         highlight = true
         enableQQ = false
         serverURLs = ""
-        # FixIt 0.2.6 | NEW emoji data file name, default is "google.yml"
+        # emoji data file name, default is "google.yml"
         # ["apple.yml", "google.yml", "facebook.yml", "twitter.yml"]
         # located in "themes/FixIt/assets/lib/valine/emoji/" directory
         # you can store your own data files in the same path under your project:
@@ -585,7 +877,7 @@
         numPosts = 10
         appId = ""
         languageCode = ""
-      # FixIt 0.2.0 | NEW Telegram comments config (https://comments.app)
+      # Telegram comments config (https://comments.app)
       [params.page.comment.telegram]
         enable = false
         siteID = ""
@@ -595,10 +887,10 @@
         colorful = true
         dislikes = false
         outlined = false
-      # FixIt 0.2.0 | NEW Commento comment config (https://commento.io)
+      # Commento comment config (https://commento.io)
       [params.page.comment.commento]
         enable = false
-      # FixIt 0.2.5 | NEW Utterances comment config (https://utteranc.es)
+      # Utterances comment config (https://utteranc.es)
       [params.page.comment.utterances]
         enable = false
         # owner/repo
@@ -635,7 +927,7 @@
         lightTheme = "light"
         darkTheme = "dark"
         lazyLoad = true
-    # FixIt 0.2.7 | NEW Third-party library config
+    # Third-party library config
     [params.page.library]
       [params.page.library.css]
         # someCSS = "some.css"
@@ -647,7 +939,7 @@
         # located in "assets/"
         # Or
         # someJavascript = "https://cdn.example.com/some.js"
-    # FixIt 0.2.10 | CHANGED Page SEO config
+    # Page SEO config
     [params.page.seo]
       # image URL
       images = []
@@ -656,7 +948,7 @@
         name = ""
         logoUrl = ""
 
-  # FixIt 0.2.5 | NEW TypeIt config
+  # TypeIt config
   [params.typeit]
     # typing speed between each step (measured in milliseconds)
     speed = 100
@@ -688,8 +980,6 @@
     content = ""
     # watermark's transparency
     opacity = 0.1
-    # parent of watermark's container
-    appendTo = ".wrapper>main"
     # watermark's width. unit: px
     width = 150
     # watermark's height. unit: px
@@ -721,14 +1011,14 @@
     so = ""
     sogou = ""
 
-  # FixIt 0.2.10 | NEW Site SEO config
+  # Site SEO config
   [params.seo]
     # image URL
     image = ""
     # thumbnail URL
     thumbnailUrl = ""
 
-  # FixIt 0.2.0 | NEW Analytics config
+  # Analytics config
   [params.analytics]
     enable = false
     # Google Analytics
@@ -742,7 +1032,7 @@
       # server url for your tracker if you're self hosting
       server = ""
 
-  # FixIt 0.2.7 | NEW Cookie consent config
+  # Cookie consent config
   [params.cookieconsent]
     enable = true
     # text strings used for Cookie consent banner
@@ -751,14 +1041,14 @@
       dismiss = ""
       link = ""
 
-  # FixIt 0.2.7 | CHANGED CDN config for third-party library files
+  # CDN config for third-party library files
   [params.cdn]
     # CDN data file name, disabled by default ["jsdelivr.yml", "unpkg.yml", ...]
     # located in "themes/FixIt/assets/data/cdn/" directory
     # you can store your own data files in the same path under your project: "assets/data/cdn/"
     data = ""
 
-  # FixIt 0.2.8 | NEW Compatibility config
+  # Compatibility config
   [params.compatibility]
     # whether to use Polyfill.io to be compatible with older browsers
     polyfill = false
@@ -810,12 +1100,6 @@
     # "corner-indicator", "fill-left", "flash", "flat-top", "loading-bar", "mac-osx", "material", "minimal"]
     theme = "minimal"
   
-  # FixIt 0.2.18-lts.3 | NEW [Experimental] cache remote images locally, see: https://github.com/hugo-fixit/FixIt/pull/362
-  [params.cacheRemoteImages]
-    enable = false
-    # replace remote image url with local image url
-    replace = false
-  
   # FixIt 0.2.17 | NEW Define custom file paths
   # Create your custom files in site directory `layouts/partials/custom` and uncomment needed files below
   [params.customFilePath]
@@ -835,12 +1119,3 @@
       enable = false
       # "vConsole", "eruda" supported
       type = "vConsole"
-
-# -------------------------------------------------------------------------------------
-# Modules Configuration
-# See: https://gohugo.io/hugo-modules/configuration/#module-config-imports
-# -------------------------------------------------------------------------------------
-[module]
-  [module.hugoVersion]
-    extended = true
-    min = "0.109.0"

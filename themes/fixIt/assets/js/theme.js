@@ -330,7 +330,7 @@ class FixIt {
     const $breadcrumbContainer = document.querySelector('.breadcrumb-container.sticky')
     this.breadcrumbHeight = $breadcrumbContainer?.clientHeight ?? 0;
     if (this.breadcrumbHeight) {
-      document.querySelector('#content')?.style.setProperty('--fi-breadcrumb-height', `${this.breadcrumbHeight}px`);
+      document.querySelector('main.container')?.style.setProperty('--fi-breadcrumb-height', `${this.breadcrumbHeight}px`);
     }
   }
 
@@ -460,14 +460,6 @@ class FixIt {
     });
   }
 
-  initHeaderLink() {
-    for (let num = 1; num <= 6; num++) {
-      this.util.forEach(document.querySelectorAll('.single .content > h' + num), ($header) => {
-        $header.classList.add('header-link');
-        $header.insertAdjacentHTML('afterbegin', `<a href="#${$header.id}" class="header-mark"></a>`);
-      });
-    }
-  }
   /**
    * init table of contents
    */
@@ -482,7 +474,7 @@ class FixIt {
       $tocCore.parentElement.replaceChild($newTocCore, $tocCore);
       $tocCore = $newTocCore;
     }
-    if (document.getElementById('toc-static').dataset.kept === true || this.util.isTocStatic()) {
+    if (document.getElementById('toc-static').dataset.kept === 'true' || this.util.isTocStatic()) {
       const $tocContentStatic = document.getElementById('toc-content-static');
       if ($tocCore.parentElement !== $tocContentStatic) {
         $tocCore.parentElement.removeChild($tocCore);
@@ -502,7 +494,7 @@ class FixIt {
       $toc.style.marginTop = `${$postMeta.offsetTop + $postMeta.clientHeight}px`;
       const $tocLinkElements = $tocCore.querySelectorAll('a:first-child');
       const $tocLiElements = $tocCore.getElementsByTagName('li');
-      const $headerLinkElements = document.getElementsByClassName('header-link');
+      const $headingElements = document.getElementsByClassName('heading-element');
       const headerHeight = document.getElementById('header-desktop').offsetHeight;
       document.querySelector('.container').addEventListener('resize', () => {
         $toc.style.marginBottom = `${document.querySelector('.container').clientHeight - document.querySelector('.post-footer').offsetTop}px`;
@@ -516,16 +508,16 @@ class FixIt {
           $tocLi.classList.remove('has-active');
         });
         const INDEX_SPACING = 20 + (document.body.dataset.headerDesktop !== 'normal' ? headerHeight : 0) + this.breadcrumbHeight;
-        let activeTocIndex = $headerLinkElements.length - 1;
-        for (let i = 0; i < $headerLinkElements.length - 1; i++) {
-          const thisTop = $headerLinkElements[i].getBoundingClientRect().top;
-          const nextTop = $headerLinkElements[i + 1].getBoundingClientRect().top;
+        let activeTocIndex = $headingElements.length - 1;
+        for (let i = 0; i < $headingElements.length - 1; i++) {
+          const thisTop = $headingElements[i].getBoundingClientRect().top;
+          const nextTop = $headingElements[i + 1].getBoundingClientRect().top;
           if ((i == 0 && thisTop > INDEX_SPACING) || (thisTop <= INDEX_SPACING && nextTop > INDEX_SPACING)) {
             activeTocIndex = i;
             break;
           }
         }
-        if (activeTocIndex !== -1) {
+        if (activeTocIndex !== -1 && $tocLinkElements[activeTocIndex]) {
           $tocLinkElements[activeTocIndex].classList.add('active');
           let $parent = $tocLinkElements[activeTocIndex].parentElement;
           while ($parent !== $tocCore) {
@@ -891,7 +883,7 @@ class FixIt {
     this.config.watermark?.enable &&
       new Watermark({
         content: this.config.watermark.content || `${document.querySelector('footer .fixit-icon')?.outerHTML ?? ''} FixIt Theme`,
-        appendTo: this.config.watermark.appendto || '.wrapper>main',
+        appendTo: '.widgets',
         opacity: this.config.watermark.opacity,
         width: this.config.watermark.width,
         height: this.config.watermark.height,
@@ -922,7 +914,6 @@ class FixIt {
   }
 
   initFixItDecryptor() {
-    const $tocNodes = document.querySelectorAll('#toc-auto>.d-none, #toc-static.d-none');
     this.decryptor = new FixItDecryptor({
       decrypted: () => {
         this.initTwemoji();
@@ -930,22 +921,21 @@ class FixIt {
         this.initLightGallery();
         this.initHighlight();
         this.initTable();
-        this.initHeaderLink();
         this.initMath();
         this.initMermaid();
         this.initEcharts();
         this.initTypeit();
         this.initMapbox();
-        this.util.forEach($tocNodes, ($element) => {
-          $element.classList.remove('d-none');
+        this.util.forEach(document.querySelectorAll('.encrypted-hidden'), ($element) => {
+          $element.classList.replace('encrypted-hidden', 'decrypted-shown');
         });
         this.initToc();
         this.initTocListener();
         this.initPangu();
       },
       reset: () => {
-        this.util.forEach($tocNodes, ($element) => {
-          $element.classList.add('d-none');
+        this.util.forEach(document.querySelectorAll('.decrypted-shown'), ($element) => {
+          $element.classList.replace('decrypted-shown', 'encrypted-hidden');
         });
       }
     });
@@ -1158,7 +1148,6 @@ class FixIt {
         this.initLightGallery();
         this.initHighlight();
         this.initTable();
-        this.initHeaderLink();
         this.initMath();
         this.initMermaid();
         this.initEcharts();

@@ -19,6 +19,9 @@ noscript = "Le thème FixIt fonctionne mieux quand JavaScript est activé."
 # === baseof ===
 
 # === Taxonomy ===
+[archives]
+other = ""
+
 [allSome]
 other = "Tous les {{ .Some }}"
 
@@ -27,6 +30,12 @@ other = "Catégorie"
 
 [categories]
 other = "Catégories"
+
+[collection]
+other = ""
+
+[collections]
+other = ""
 
 [tag]
 other = "Tag"
@@ -45,6 +54,10 @@ recentlyUpdated = "Récemment Modifié"
 [section.totalWordCount]
 one = "Nombre de mots: 1"
 other = "Nombre de mots: {{ .Count }}"
+
+[section.archiveCounter]
+one = ""
+other = ""
 # === Section ===
 
 # === Pagination ===
@@ -96,16 +109,18 @@ other = "Partager via"
 
 # === posts/single.html ===
 [single]
-contents= "Contenus"
-repost= "Reposter"
-publishedOnDate= "publié le {{ .Date }}"
-includedInCategories= "inclus dans {{ .Categories }}"
+contents = "Contenus"
+pin = ""
+repost = "Reposter"
+publishedOnDate = "publié le {{ .Date }}"
 views = "vues"
 comments = "commentaires"
 author = "Auteur"
 updatedOnDate = "Mis à jour le {{ .Date }}"
 readMarkdown = "Ouvrir le Markdown"
+viewSource = ""
 editThisPage = "Modifier cette page"
+reportIssue = ""
 back = "Retour"
 home = "Accueil"
 readMore = "En savoir plus"
@@ -114,6 +129,12 @@ encryptedAbstract = "Cet article a été chiffré, son contenu n'est donc pas li
 encryptedMessage = "Entrer le mot de passe"
 password = "Mot de passe"
 encryptyAgain = "Chiffrer à nouveau"
+relatedContent = "Contenu lié"
+
+[single.includedIn]
+categories = "inclus dans {{ .Categories }}"
+collections = "inclus dans {{ .Collections }}"
+both = "inclus dans {{ .Categories }} et {{ .Collections }}"
 
 [single.wordCount]
 one = "1 mot"

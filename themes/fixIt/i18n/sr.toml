@@ -20,6 +20,9 @@ noscript = ""
 # === baseof ===
 
 # === Taxonomy ===
+[archives]
+other = ""
+
 [allSome]
 other = "Све {{ .Some }}"
 
@@ -28,6 +31,12 @@ other = "Категорија"
 
 [categories]
 other = "Категорије"
+
+[collection]
+other = ""
+
+[collections]
+other = ""
 
 [tag]
 other = "Таг"
@@ -44,6 +53,10 @@ other = "Постови"
 recentlyUpdated = "Недавно Ажурирано"
 
 [section.totalWordCount]
+one = ""
+other = ""
+
+[section.archiveCounter]
 one = ""
 other = ""
 # === Section ===
@@ -97,16 +110,18 @@ other = "Подели на"
 
 # === posts/single.html ===
 [single]
-contents= "Садржаји"
-repost= ""
-publishedOnDate= "објављено {{ .Date }}"
-includedInCategories= "укључено {{ .Categories }}"
+contents = "Садржаји"
+pin = ""
+repost = ""
+publishedOnDate = "објављено {{ .Date }}"
 views = "прегледа"
 comments = "коментари"
 author = "Аутор"
 updatedOnDate = "Ажурирано {{ .Date }}"
 readMarkdown = "Читај Markdown"
+viewSource = ""
 editThisPage = "Уреди ову страницу"
+reportIssue = ""
 back = "Назад"
 home = "Почетна"
 readMore = "Прочитај више"
@@ -115,6 +130,12 @@ encryptedAbstract = ""
 encryptedMessage = ""
 password = "Паролица"
 encryptyAgain = ""
+relatedContent = "Повезани садржај"
+
+[single.includedIn]
+categories = "укључено {{ .Categories }}"
+collections = "укључено {{ .Collections }}"
+both = "укључено {{ .Categories }} и {{ .Collections }}"
 
 [single.wordCount]
 one = "Једна реч"

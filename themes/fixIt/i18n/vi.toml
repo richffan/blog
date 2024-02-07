@@ -19,6 +19,9 @@ noscript = ""
 # === baseof ===
 
 # === Taxonomy ===
+[archives]
+other = ""
+
 [allSome]
 other = "Tất cả {{ .Some }}"
 
@@ -27,6 +30,12 @@ other = "Danh mục"
 
 [categories]
 other = "Danh mục"
+
+[collection]
+other = ""
+
+[collections]
+other = ""
 
 [tag]
 other = "Nhãn"
@@ -43,6 +52,10 @@ other = "Bài viết"
 recentlyUpdated = "Mới nhất"
 
 [section.totalWordCount]
+one = ""
+other = ""
+
+[section.archiveCounter]
 one = ""
 other = ""
 # === Section ===
@@ -96,16 +109,18 @@ other = "Chia sẻ trên"
 
 # === posts/single.html ===
 [single]
-contents= "Nội dung"
-repost= ""
-publishedOnDate= "đăng ngày {{ .Date }}"
-includedInCategories= "trong {{ .Categories }}"
+contents = "Nội dung"
+pin = ""
+repost = ""
+publishedOnDate = "đăng ngày {{ .Date }}"
 views = "lượt xem"
 comments = "bình luận"
 author = "Tác giả"
 updatedOnDate = "Cập nhật ngày {{ .Date }}"
 readMarkdown = "Đọc với định dạng Markdown"
+viewSource = ""
 editThisPage = "Chỉnh sửa trang này"
+reportIssue = ""
 back = "Quay lại"
 home = "Trang chủ"
 readMore = "Đọc thêm"
@@ -114,6 +129,12 @@ encryptedAbstract = ""
 encryptedMessage = ""
 password = "Mật khẩu"
 encryptyAgain = ""
+relatedContent = "Nội dung liên quan"
+
+[single.includedIn]
+categories = "trong {{ .Categories }}"
+collections = "trong {{ .Collections }}"
+both = "trong {{ .Categories }} và {{ .Collections }}"
 
 [single.wordCount]
 one = "One word"

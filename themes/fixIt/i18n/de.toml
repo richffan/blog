@@ -20,6 +20,9 @@ noscript = ""
 # === baseof ===
 
 # === Taxonomy ===
+[archives]
+other = ""
+
 [allSome]
 other = "Alle {{ .Some }}"
 
@@ -28,6 +31,12 @@ other = "Kategorie"
 
 [categories]
 other = "Kategorien"
+
+[collection]
+other = ""
+
+[collections]
+other = ""
 
 [tag]
 other = "Tag"
@@ -44,6 +53,10 @@ other = "Artikel"
 recentlyUpdated = "Zuletzt aktualisiert"
 
 [section.totalWordCount]
+one = ""
+other = ""
+
+[section.archiveCounter]
 one = ""
 other = ""
 # === Section ===
@@ -97,16 +110,18 @@ other = "Teilen auf"
 
 # === posts/single.html ===
 [single]
-contents= "Inhalt"
-repost= ""
-publishedOnDate= "veröffentlicht an {{ .Date }}"
-includedInCategories= "enthalten in {{ .Categories }}"
+contents = "Inhalt"
+pin = ""
+repost = ""
+publishedOnDate = "veröffentlicht an {{ .Date }}"
 views = "Aufrufe"
 comments = "Kommentare"
 author = "Autor"
 updatedOnDate = "Aktualisiert am {{ .Date }}"
 readMarkdown = "Markdown anzeigen"
+viewSource = ""
 editThisPage = "Diese Seite bearbeiten"
+reportIssue = ""
 back = "Zurück"
 home = "Startseite"
 readMore = "Mehr lesen"
@@ -115,6 +130,12 @@ encryptedAbstract = ""
 encryptedMessage = ""
 password = "Passwort"
 encryptyAgain = ""
+relatedContent = "Ähnliche Inhalte"
+
+[single.includedIn]
+categories = "enthalten in {{ .Categories }}"
+collections = "enthalten in {{ .Collections }}"
+both = "enthalten in {{ .Categories }} und {{ .Collections }}"
 
 [single.wordCount]
 one = "Ein Wort"

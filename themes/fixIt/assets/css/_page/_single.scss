@@ -1,5 +1,6 @@
 @import '../_partials/_single/toc';
 @import '../_partials/_single/fixit-decryptor';
+@import '../_partials/_single/collections';
 
 .single {
   .single-title {
@@ -9,15 +10,19 @@
     font-weight: bold;
     line-height: 140%;
 
-    .icon-repost {
-      color: var(--#{$prefix}success);
+    .icon-pin {
       display: inline-block;
       width: max-content;
-      margin-right: 0.25rem;
+      transform: rotate(30deg);
+      margin-right: 0.25em;
+      @extend .text-danger;
+    }
 
-      [data-theme='dark'] & {
-        color: var(--#{$prefix}success-dark);
-      }
+    .icon-repost {
+      display: inline-block;
+      width: max-content;
+      margin-right: 0.25em;
+      @extend .text-success;
     }
   }
 
@@ -141,7 +146,7 @@
     > h4,
     > h5,
     > h6 {
-      > .header-mark::before {
+      > .heading-mark::before {
         content: '|';
         margin-right: 0.3125rem;
         color: $single-link-color;
@@ -152,7 +157,7 @@
       }
     }
 
-    > h2 > .header-mark::before {
+    > h2 > .heading-mark::before {
       content: '#';
     }
 
@@ -290,7 +295,7 @@
         height: auto;
       }
 
-      &:is([loading='lazy']):not([data-lazyloaded]) {
+      &[loading='lazy'][srcset]:not([data-lazyloaded]) {
         &:not(.suffix-invalid__small) {
           width: var(--width-small, var(--width));
           aspect-ratio: var(--aspect-ratio-small, var(--aspect-ratio));
@@ -338,10 +343,6 @@
         display: block;
         margin: 0 auto;
         overflow: hidden;
-
-        &:not([width]) {
-          width: 100%;
-        }
       }
     }
 

@@ -19,6 +19,9 @@ noscript = "FixIt 主题在启用 JavaScript 的情况下效果最佳。"
 # === baseof ===
 
 # === Taxonomy ===
+[archives]
+other = "归档"
+
 [allSome]
 other = "所有{{ .Some }}"
 
@@ -27,6 +30,12 @@ other = "分类"
 
 [categories]
 other = "分类"
+
+[collection]
+other = "合集"
+
+[collections]
+other = "合集"
 
 [tag]
 other = "标签"
@@ -44,6 +53,9 @@ recentlyUpdated = "最近更新"
 
 [section.totalWordCount]
 other = "总计约 {{ .Count }} 字"
+
+[section.archiveCounter]
+other = "共计 {{ .Count }} 篇文章"
 # === Section ===
 
 # === Pagination ===
@@ -95,16 +107,18 @@ other = "分享到"
 
 # === posts/single.html ===
 [single]
-contents= "目录"
-repost= "转载"
-publishedOnDate= "发布于 {{ .Date }}"
-includedInCategories= "收录于 {{ .Categories }}"
+contents = "目录"
+pin = "置顶"
+repost = "转载"
+publishedOnDate = "发布于 {{ .Date }}"
 views = "次阅读"
 comments = "条评论"
 author = "作者"
 updatedOnDate = "更新于 {{ .Date }}"
 readMarkdown = "阅读原始文档"
+viewSource = "查看源码"
 editThisPage = "编辑此页"
+reportIssue = "报告问题"
 back = "返回"
 home = "主页"
 readMore = "阅读全文"
@@ -113,6 +127,12 @@ encryptedAbstract = "本文已加密，因此其原始内容不可见！"
 encryptedMessage = "请输入密码"
 password = "密码"
 encryptyAgain = "重新加密"
+relatedContent = "相关内容"
+
+[single.includedIn]
+categories = "收录于 {{ .Categories }}"
+collections = "收录于 {{ .Collections }}"
+both = "收录于 {{ .Categories }} 和 {{ .Collections }}"
 
 [single.wordCount]
 other = "{{ .Count }} 字"

@@ -1,5 +1,6 @@
-{{- define "title" }}
-  {{- .Params.Title | default (T .Section) | default .Section | dict "Some" | T "allSome" }} - {{ .Site.Title -}}
+{{- define "title" -}}
+  {{- .Params.Title | default (T .Section) | default .Section | dict "Some" | T "allSome" -}}
+  {{- if .Site.Params.withSiteTitle }} {{ .Site.Params.titleDelimiter }} {{ .Site.Title }}{{- end -}}
 {{- end -}}
 
 {{- define "content" -}}
@@ -7,8 +8,8 @@
     <div class="header">
       {{- /* Title */ -}}
       <h1 class="single-title animate__animated animate__pulse animate__faster">
-        {{- .Params.Title | default (T .Section) | default .Section | dict "Some" | T "allSome" }}
-        <sup>{{- len .Pages -}}</sup>
+        {{- dict "Class" "fa-solid fa-feather fa-fw me-1" | partial "plugin/icon.html" -}}
+        {{- .Params.Title | default (T .Section) | default .Section | dict "Some" | T "allSome" }} <sup>{{ .Pages.Len }}</sup>
       </h1>
       {{- /* Total word count */ -}}
       {{- /* See https://github.com/hugo-fixit/FixIt/issues/124 */ -}}
@@ -37,10 +38,19 @@
       {{- end -}}
       {{- partial "recently-updated.html" . -}}
       {{- range $pages.PageGroups -}}
-        <h2 class="group-title">{{ .Key }}</h2>
+        <h2 class="group-title">
+          {{- dict "Class" "fa-regular fa-calendar fa-fw me-1" | partial "plugin/icon.html" -}}
+          {{- .Key -}}
+        </h2>
         {{- range .Pages -}}
           <article class="archive-item">
-            <a href="{{ .RelPermalink }}" class="archive-item-link">{{- .Title -}}</a>
+            <a href="{{ .RelPermalink }}" class="archive-item-link">
+              {{- $repost := .Params.repost | default dict -}}
+              {{- if eq $repost.enable true -}}
+                {{- dict "Class" "fa-solid fa-share fa-fw text-success me-1" | partial "plugin/icon.html" -}}
+              {{- end -}}
+              {{- .LinkTitle -}}
+            </a>
             <span class="archive-item-date" title='{{ "2006-01-02 15:04:05" | .Date.Format }}'>
               {{- .Date | dateFormat ($.Site.Params.section.dateFormat | default "01-02") -}}
             </span>

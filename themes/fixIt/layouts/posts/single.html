@@ -1,23 +1,17 @@
-{{- define "title" }}{{ .Title }} - {{ .Site.Title }}{{ end -}}
+{{- define "title" -}}
+  {{- .Title -}}
+  {{- if .Site.Params.withSiteTitle }} {{ .Site.Params.titleDelimiter }} {{ .Site.Title }}{{- end -}}
+{{- end -}}
 
 {{- define "content" -}}
   {{- $params := .Scratch.Get "params" -}}
   {{- $toc := .Scratch.Get "toc" -}}
+  {{- $tocEmpty := eq .TableOfContents `<nav id="TableOfContents"></nav>` -}}
 
-  <aside class="toc" id="toc-auto">
-    {{- /* Auto TOC */ -}}
-    {{- $tocEmpty := eq .TableOfContents `<nav id="TableOfContents"></nav>` -}}
-    {{- if (ne $toc.enable false) | and (ne $tocEmpty true) -}}
-      <h2 class="toc-title{{ with $params.password }} d-none{{ end }}">
-        {{- T "single.contents" -}}&nbsp;
-        {{- dict "Class" "toc-icon fa-solid fa-angle-down fa-fw" | partial "plugin/icon.html" -}}
-      </h2>
-      <div class="toc-content{{ if eq $toc.auto false }} always-active{{ end }}{{ with $params.password }} d-none{{ end }}" id="toc-content-auto"></div>
-    {{- end -}}
-  </aside>
-
-  <aside class="aside-custom">
-    <!-- put aside for later use -->
+  <aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="{{ T "collections" }}">
+    {{- /* Collection List */ -}}
+    {{- partial "single/collection-list.html" . -}}
+     {{- /* Custom part for aside */ -}}
     {{- partial (.Scratch.Get "customFilePath").aside . -}}
   </aside>
 
@@ -48,30 +42,23 @@
     <div class="post-meta">
       <div class="post-meta-line">
         {{- partial "single/post-author.html" . -}}
-
-        {{- $categories := slice -}}
-        {{- range .Params.categories -}}
-          {{- $category := partialCached "function/path.html" . . | printf "/categories/%v" | $.Site.GetPage -}}
-          {{- $categories = $categories | append (printf `<a href="%v">%v %v</a>` (partial "function/escapeurl.html" $category.RelPermalink) (dict "Class" "fa-regular fa-folder fa-fw" | partial "plugin/icon.html") $category.Title) -}}
-        {{- end -}}
-        {{- with delimit $categories "&ensp;" }}
-          <span class="post-category">
-            {{- dict "Categories" . | T "single.includedInCategories" | safeHTML -}}
-          </span>
-        {{- end -}}
+        {{- partial "single/post-included-in.html" . -}}
       </div>
+      {{- /* TODO add disclaimer or space between meta and content */ -}}
       <div class="post-meta-line">
         {{- with .PublishDate | dateFormat (.Site.Params.dateformat | default "2006-01-02") -}}
           <span title="{{ dict "Date" ("2006-01-02 15:04:05" | $.PublishDate.Format) | T "single.publishedOnDate" }}">
-            {{- dict "Class" "fa-regular fa-calendar-alt fa-fw me-1" | partial "plugin/icon.html" -}}
+            {{- dict "Class" "fa-solid fa-calendar-days fa-fw me-1" | partial "plugin/icon.html" -}}
             {{- printf `<time datetime="%v">%v</time>` . . | safeHTML -}}
           </span>&nbsp;
         {{- end -}}
-        {{- with .Lastmod | dateFormat (.Site.Params.dateformat | default "2006-01-02") -}}
-          <span title="{{ dict "Date" ("2006-01-02 15:04:05" | $.Lastmod.Format) | T "single.updatedOnDate" }}">
-            {{- dict "Class" "fa-regular fa-edit fa-fw me-1" | partial "plugin/icon.html" -}}
-            {{- printf `<time datetime="%v">%v</time>` . . | safeHTML -}}
-          </span>&nbsp;
+        {{- if ne .Lastmod.Unix .PublishDate.Unix }}
+          {{- with .Lastmod | dateFormat (.Site.Params.dateformat | default "2006-01-02") -}}
+            <span title="{{ dict "Date" ("2006-01-02 15:04:05" | $.Lastmod.Format) | T "single.updatedOnDate" }}">
+              {{- dict "Class" "fa-regular fa-calendar-check fa-fw me-1" | partial "plugin/icon.html" -}}
+              {{- printf `<time datetime="%v">%v</time>` . . | safeHTML -}}
+            </span>&nbsp;
+          {{- end -}}
         {{- end -}}
         {{- if $params.wordCount -}}
           <span title="{{ T "single.wordCount" .WordCount }}">
@@ -155,13 +142,13 @@
     {{- end -}}
     {{- with $image -}}
       <div class="featured-image">
-        {{- dict "Src" . "Title" $.Description "Resources" $.Resources | partial "plugin/image.html" -}}
+        {{- dict "Src" . "Title" $.Description | partial "plugin/image.html" -}}
       </div>
     {{- end -}}
 
     {{- /* Static TOC */ -}}
     {{- if (ne $toc.enable false) | and (ne $tocEmpty true) -}}
-      <div class="details toc{{ with $params.password }} d-none{{ end }}" id="toc-static" data-kept="{{ if $toc.keepStatic }}true{{ else }}false{{ end }}">
+      <div class="details toc{{ with $params.password }} encrypted-hidden{{ end }}" id="toc-static" data-kept="{{ if $toc.keepStatic }}true{{ else }}false{{ end }}">
         <div class="details-summary toc-title">
           <span>{{ T "single.contents" }}</span>
           <span>{{ dict "Class" "details-icon fa-solid fa-angle-right" | partial "plugin/icon.html" }}</span>
@@ -193,22 +180,44 @@
         {{- /* Expiration Reminder */ -}}
         {{- partial "single/expiration-reminder.html" . -}}
         {{- $content -}}
-      {{- else -}}
-        {{- partial "single/fixit-decryptor.html" . -}}
       {{- end -}}
     </div>
 
-    {{- /* Footer and Reward */ -}}
+    {{- /* Related Content */ -}}
+    {{- partial "single/related.html" . -}}
+
+    {{- /* Reward before Footer */ -}}
     {{- $reward := .Scratch.Get "reward" -}}
     {{- if eq $reward.position "before" -}}
       {{- partial "single/reward.html" . -}}
-      {{- partial "single/footer.html" . -}}
-    {{- else -}}
-      {{- partial "single/footer.html" . -}}
+    {{- end -}}
+
+    {{- /* Collection Navigation */ -}}
+    {{- partial "single/collection-nav.html" . -}}
+
+    {{- /* FixIt Decryptor */ -}}
+    {{- partial "single/fixit-decryptor.html" . -}}
+
+    {{- /* Footer */ -}}
+    {{- partial "single/footer.html" . -}}
+
+    {{- /* Reward after Footer */ -}}
+    {{- if eq $reward.position "after" -}}
       {{- partial "single/reward.html" . -}}
     {{- end -}}
 
     {{- /* Comment */ -}}
     {{- partial "single/comment.html" . -}}
   </article>
+
+  <aside class="toc" id="toc-auto" aria-label="{{ T "single.contents" }}">
+    {{- /* Auto TOC */ -}}
+    {{- if (ne $toc.enable false) | and (ne $tocEmpty true) -}}
+      <h2 class="toc-title{{ with $params.password }} encrypted-hidden{{ end }}">
+        {{- T "single.contents" -}}&nbsp;
+        {{- dict "Class" "toc-icon fa-solid fa-angle-down fa-fw" | partial "plugin/icon.html" -}}
+      </h2>
+      <div class="toc-content{{ if eq $toc.auto false }} always-active{{ end }}{{ with $params.password }} encrypted-hidden{{ end }}" id="toc-content-auto"></div>
+    {{- end -}}
+  </aside>
 {{- end -}}
