@@ -437,7 +437,7 @@ enableEmoji = true
     license = ""
     # FixIt 0.3.0 | NEW whether to show Hugo and theme info
     [params.footer.powered]
-      enable = true
+      enable = false
       hugoLogo = true
       themeLogo = true
     # FixIt 0.2.17 | CHANGED Site creation time
