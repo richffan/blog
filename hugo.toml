@@ -48,11 +48,11 @@ enableGitInfo = false
 
     # 如下导航链接，你应该创建对应的 `.md` 文件，以生成对应的页面
     # -----------------------------------
-    Nav - nav.md or nav/index.md 
-    Search - search.md or search/index.md
-    Archive - archive.md or archive/index.md
-    Wiki - posts/wiki.md or wiki/index.md
-    About - about.md or about/index.md
+    # Nav - nav.md or nav/index.md 
+    # Search - search.md or search/index.md
+    # Archive - archive.md or archive/index.md
+    # Wiki - posts/wiki.md or wiki/index.md
+    # About - about.md or about/index.md
     # -----------------------------------
     # 菜单选项定制，使用 `00、01、23` 等进行选项顺序调整
     # 🐶🎉👀💡👓🐌

@@ -1,0 +1,15 @@
+# serverless.yml
+
+component: website
+name: virgo
+app: virgo
+stage: dev
+
+inputs:
+   src:
+     src: ./public
+     index: index.html
+     error: index.html
+   region: ap-shanghai
+   bucketName: virgo-1255529567
+   protocol: https
