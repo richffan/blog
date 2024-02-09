@@ -89,6 +89,12 @@ enableGitInfo = false
             icon = '⚗️'
         [params.menu.55]
             active = true
+            path = '/wiki'
+            en = 'Wiki'
+            zh = '百科'
+            icon = '👓'
+        [params.menu.66]
+            active = true
             path = '/about'
             en = 'About'
             zh = '关于'
@@ -104,7 +110,7 @@ enableGitInfo = false
         # 你还可以通过 `width` 调整引入图片的显示大小，
         # 如果，将 `width` 设置为 '' 或 0 ，
         # 将默认使用图片自身分辨率尺寸
-        src = 'tux.svg'
+        src = 'tux.jpg'
         width = 0
         # words = "Stay hungry, Stay foolish. <br>Your time is limited, so don't waste it living someone else's life. <br>Have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary. <br>-- Steve Jobs."
         # words = "多少事，从来急；<br>天地转，光阴迫。<br>一万年太久，只争朝夕。<br>-- 教员"
