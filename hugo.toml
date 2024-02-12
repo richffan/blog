@@ -64,7 +64,7 @@ publishDir             = "public"
   faviconmd               = "![Favicon](/favicon.svg)"
   homeLayout              = "onboarding"
   siteContentOrder        = "weight"
-  # toc                   = true
+  toc                   = true
   # globalBanner          = true
   currentVersion          = "latest"
   latestVersionUrl        = "https://richfan.site/"
@@ -74,11 +74,11 @@ publishDir             = "public"
       keys     = ["Shift","1"]
       function = "scExample"
   [[params.navbar.versions]]
-    name = '最新斑斑'
-    url  = 'https://img.richfan.site/'
+    name = '最新版本'
+    url  = 'https://richfan.site/'
   [[params.navbar.versions]]
     name = '已弃用的版本'
-    url  = 'https://img.richfan.site/404.html'
+    url  = 'https://richfan.site/404.html'
   [params.taxonomies]
     [params.taxonomies.categories]
       icon = "fa-solid fa-table-cells"
