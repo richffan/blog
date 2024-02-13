@@ -1,6 +1,6 @@
 ---
-weight: 1000
-title: "财技"
+weight: 11000
+title: "合并"
 description: "财技领域"
 titleIcon: "fa-solid fa-dollar-sign"
 categories: ["财技"]
