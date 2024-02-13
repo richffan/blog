@@ -5,8 +5,6 @@ description: "专业 学习 考证"
 categories: ["主页"]
 ---
 
-# 樊刹
-
 ## 专业
 
 ## 学习
