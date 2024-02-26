@@ -2,10 +2,10 @@
 # GitHub links displayed in the information modal
 #
 [github]
-  main = "https://github.com/jgazeau/shadocs"
-  download = "https://github.com/jgazeau/shadocs/archive/main.zip"
-  issue = "https://github.com/jgazeau/shadocs/issues"
-  fork = "https://github.com/jgazeau/shadocs/fork"
+  main = "https://github.com/richffan"
+  download = "https://github.com/richffan/blog/archive/main.zip"
+  issue = "https://github.com/richffan/blog/issues"
+  fork = "https://github.com/richffan/blog/fork"
 #
 # Miscellaneous sidebar parameters
 #
